@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Dataset Release - BNR Analytics System Refit</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">BNR Analytics System Refit</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../introduction/" class="nav-link">Introduction</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Process</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Dataset Release</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Analytics</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../analytics_overview/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../monthly_reports/" class="dropdown-item">Monthly Reports</a>
+</li>
+                                    
+<li>
+    <a href="../annual_reports/" class="dropdown-item">Annual Reports</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../introduction/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../analytics_overview/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#standard-operating-procedure-sop" class="nav-link">Standard Operating Procedure (SOP)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#bnr-continuous-dataset-release-and-tiered-access" class="nav-link">BNR Continuous Dataset Release and Tiered Access</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="standard-operating-procedure-sop">Standard Operating Procedure (SOP)</h1>
+<h2 id="bnr-continuous-dataset-release-and-tiered-access">BNR Continuous Dataset Release and Tiered Access</h2>
+<p><strong>Document Version:</strong> v1.0<br />
+<strong>Effective Date:</strong> [Insert Date]<br />
+<strong>Author:</strong> Ian Hambleton<br />
+<strong>Approved by:</strong> Christina Howitt - BNR Technical Lead  </p>
+<hr />
+<h3 id="1-purpose">1. Purpose</h3>
+<p>To outline the standardized process for 
+- weekly cleaning, 
+- monthly release of cumulative datasets for the cardiovascular (CVD) components of the BNR
+- Generation of tiered dataset versions based on data sensitivity.
+-  Controlled access to datasets according to user roles and authorizations.</p>
+<h3 id="2-scope">2. Scope</h3>
+<p>This SOP applies to all personnel involved in BNR data processing, analysis, and dissemination related to cardiovascular diseases (acute myocardial infarction and stroke).</p>
+<h3 id="3-definitions">3. Definitions</h3>
+<p><strong>Full Dataset:</strong> Contains all identifiable and clinical information.</p>
+<p><strong>De-identified Dataset:</strong> Direct identifiers removed; may contain dates and quasi-identifiers.</p>
+<p><strong>Anonymized Dataset:</strong> Irreversibly stripped of identifiers and indirectly identifying information.</p>
+<p><strong>Sign-off:</strong> Approval step confirming a dataset version is ready for release.</p>
+<h3 id="4-responsibilities">4. Responsibilities</h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QC Coordinator</td>
+<td>Weekly data cleaning, QC logging, anomaly flagging</td>
+</tr>
+<tr>
+<td>Data Abstractors</td>
+<td>Timely data entry and verification</td>
+</tr>
+<tr>
+<td>Statistician</td>
+<td>Versioning, dataset creation scripts, and documentation</td>
+</tr>
+<tr>
+<td>Technical Lead</td>
+<td>Final sign-off on dataset release</td>
+</tr>
+<tr>
+<td>Data Access Manager</td>
+<td>Access control oversight and authorization</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="51-weekly-cleaning">5.1 Weekly Cleaning</h3>
+<p>Timeline: Every Friday</p>
+<p>Tasks:
+- Run automated Stata QC checks on new records.
+- Log anomalies in QC tracker.
+- Update abstraction status (full/partial/unverified).
+- Flag high-risk or incomplete records for review.</p>
+<h3 id="52-monthly-cumulative-dataset-release">5.2 Monthly Cumulative Dataset Release</h3>
+<ul>
+<li>Timeline: 1st working day of each month</li>
+<li>
+<p>Dataset Includes:
+    -All fully abstracted and verified CVD cases from registry inception to end of the preceding month.</p>
+<ul>
+<li>Separate datasets for stroke and MI, plus merged version.</li>
+</ul>
+</li>
+<li>
+<p>Dataset Naming Convention:</p>
+</li>
+<li>BNR-CVD_<TYPE><em><TIER></em><YYYYMM>.dta</li>
+<li>e.g., BNR-CVD_MI_DEID_202509.dta</li>
+</ul>
+<p>Release Folder Structure:</p>
+<p>/data/releases/YYYY/MM/</p>
+<p>FULL/</p>
+<p>DEID/</p>
+<p>ANON/</p>
+<hr />
+<h3 id="53-tiered-dataset-creation-and-small-island-privacy-considerations">5.3 Tiered Dataset Creation and Small Island Privacy Considerations</h3>
+<p>Given the BNR's context in Barbados, a small island developing state (SIDS) with a population of ~280,000, the risk of potential re-identification from seemingly benign combinations of data is higher than in larger jurisdictions. Even when direct identifiers are removed, indirect identifiers ("quasi-identifiers") may allow individuals to be re-identified when cross-referenced with external datasets or local knowledge.</p>
+<p>5.3.1. Full Dataset
+All collected variables retained, including names, exact dates, hospital IDs.</p>
+<p>For internal BNR team only.</p>
+<p>5.3.2. De-identified Dataset
+Includes:</p>
+<p>Removal of direct identifiers:</p>
+<p>Full names</p>
+<p>National IDs</p>
+<p>Addresses (home, work)</p>
+<p>Personal contact info</p>
+<p>Masking or modification of quasi-identifiers:</p>
+<p>Exact date of birth → replaced with year of birth or age at event</p>
+<p>Exact dates of admission/discharge → replaced with month and year</p>
+<p>Geographic data: parish may be retained; smaller location units (e.g. specific clinics or villages) redacted unless aggregate</p>
+<p>Occupation, rare conditions, or low-frequency diagnoses grouped or suppressed</p>
+<p>Ethnicity, nationality, or religion included only if not sensitive in local context and sample size is sufficient</p>
+<p>5.3.3. Anonymized Dataset
+All identifying and quasi-identifying fields removed or generalized.</p>
+<p>Dates removed entirely (e.g. event year only or time since event).</p>
+<p>Age binned (e.g. 10-year age groups).</p>
+<p>Suppress all rare events (e.g. n &lt; 5 for any combination of age, sex, condition).</p>
+<p>Categorical variables with unique or rare responses either:</p>
+<p>Aggregated (e.g., rare occupations grouped as "Other"), or</p>
+<p>Redacted</p>
+<hr />
+<h3 id="54-analytical-review-of-identifiability-risk">5.4 Analytical Review of Identifiability Risk</h3>
+<p>To ensure appropriate anonymization:</p>
+<p>5.4.1. Small Cell Count Suppression</p>
+<p>Run frequency tables for all combinations of age, sex, event type, and geography.</p>
+<p>Suppress cells with n &lt; 5.</p>
+<p>5.4.2. Re-identification Risk Analysis</p>
+<p>Perform k-anonymity or l-diversity checks across:</p>
+<p>Age × Sex × Parish</p>
+<p>Age × Event type × Admission month</p>
+<p>Age × Outcome × Length of stay</p>
+<p>If k &lt; 5, aggregate or suppress variable combinations.</p>
+<p>5.4.3. Human Oversight</p>
+<p>A designated Data Privacy Officer or equivalent will manually review output prior to dataset sign-off.</p>
+<p>Any concerns of potential identifiability are flagged and discussed with the Technical Lead prior to release.</p>
+<hr />
+<h3 id="6-access-levels-and-authorization">6. Access Levels and Authorization</h3>
+<table>
+<thead>
+<tr>
+<th>Dataset Tier</th>
+<th>Typical Users</th>
+<th>Access Level</th>
+<th>Approval Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FULL</td>
+<td>Internal registry staff</td>
+<td>Read/Write</td>
+<td>Technical Lead</td>
+</tr>
+<tr>
+<td>DE-IDENTIFIED</td>
+<td>Approved researchers with IRB approval</td>
+<td>Read-only</td>
+<td>Technical Lead</td>
+</tr>
+<tr>
+<td>ANONYMIZED</td>
+<td>General public, policy makers</td>
+<td>Read-only</td>
+<td>None (Open Access)</td>
+</tr>
+</tbody>
+</table>
+<p>Request Process:
+- Access request form
+- MOH/IRB approvals
+- Review by Data Access Manager</p>
+<hr />
+<h3 id="7-audit-and-logs">7. Audit and Logs</h3>
+<p>Maintain logs for:
+- Dataset creation and versioning (automated timestamps)
+- Sign-offs and access approvals
+- Dataset download activity</p>
+<hr />
+<h3 id="8-data-integrity-and-security">8. Data Integrity and Security</h3>
+<ul>
+<li>All scripts and data securely stored and version controlled</li>
+<li>Monthly backups performed and archived</li>
+<li>Encrypted required for external transfers</li>
+</ul>
+<hr />
+<h3 id="9-version-control">9. Version Control</h3>
+<p>Each dataset release includes:
+- Metadata file (<code>.txt</code>)
+- Record of total cases and changes since last release
+- Stored in: BNR-CVD_METADATA_<YYYYMM>.txt</p>
+<hr />
+<h3 id="10-review-and-updates">10. Review and Updates</h3>
+<ul>
+<li>SOP reviewed annually or after major system or policy changes</li>
+<li>Changes approved by BNR governance team</li>
+</ul>
+<hr />
+<h3 id="dataset-naming-and-formats">Dataset Naming and Formats</h3>
+<p>Each released dataset will be provided in multiple formats:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.dta</code></td>
+<td><strong>Stata binary file</strong> (primary working format, includes labels, formats, internal metadata)</td>
+</tr>
+<tr>
+<td><code>.csv</code></td>
+<td><strong>Non-proprietary, comma-separated format</strong> (for general use, readable in most statistical software and Excel)</td>
+</tr>
+<tr>
+<td><code>.json</code></td>
+<td><strong>Machine-readable format</strong> useful for integration with dashboards, data visualization tools, or APIs</td>
+</tr>
+<tr>
+<td><code>.txt</code></td>
+<td><strong>Metadata file</strong> summarizing variables, definitions, coding, and notes (accompanies each release)</td>
+</tr>
+</tbody>
+</table>
+<p>Naming convention:</p>
+<pre><code>BNR-CVD_&lt;TYPE&gt;_&lt;TIER&gt;_&lt;YYYYMM&gt;.&lt;ext&gt;
+</code></pre>
+<p>Example:</p>
+<pre><code>BNR-CVD_MI_ANON_202509.csv
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
