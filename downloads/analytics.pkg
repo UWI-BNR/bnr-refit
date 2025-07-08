@@ -1,0 +1,11 @@
+pkgname analytics
+dirmenu menus
+dirdialogs dialogs
+dirdata data
+diroutput output
+dirdo do
+
+file menus/menu.do
+file dialogs/main.dlg
+file data/dummy.dta
+file do/analysis.do
