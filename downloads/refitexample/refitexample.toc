@@ -1,1 +1,6 @@
-refitexample.pkg
+v 3
+d BNR refit - example package
+d Distribution Date: 08-July-2025
+d Distributes release 4 of the HOTN dataset, and associated Stata help files
+
+p refitexample. A package containing a mini version of our ideas
