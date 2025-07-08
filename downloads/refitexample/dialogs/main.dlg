@@ -1,0 +1,6 @@
+VERSION 1.0
+POSITION . . 300 200
+DIALOG main, label("Refit Example Tool")
+BEGIN
+    BUTTON run, label("Run Refit Example") onclick("refitexample_summary")
+END

@@ -1,0 +1,15 @@
+pkgname refitexample
+d ado
+d do
+d dialogs
+d menus
+d help
+
+f refitexample.toc
+f refitexample.pkg
+f ado/refitexample_summary.ado
+f do/dummydata.do
+f do/analysis.do
+f dialogs/main.dlg
+f menus/menu.do
+f help/refitexample.sthlp
