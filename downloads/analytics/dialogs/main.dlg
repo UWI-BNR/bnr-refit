@@ -1,9 +1,0 @@
-VERSION 1.0
-POSITION . . 300 200
-DIALOG main, label("Run Dummy Analysis")
-BEGIN
-    BUTTON run, label("Run Analysis") onclick(run_analysis)
-END
-PROGRAM run_analysis
-    DO analytics/do/analysis.do
-END
