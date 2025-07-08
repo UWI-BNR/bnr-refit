@@ -1,0 +1,1854 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/02_Data/dataset-release/">
+      
+      
+        <link rel="prev" href="../signoff/">
+      
+      
+        <link rel="next" href="../dataset-dissemination/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Dataset Release - BNR Analytics System Refit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bnr-continuous-dataset-release-and-tiered-access" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BNR Analytics System Refit" class="md-header__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BNR Analytics System Refit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Dataset Release
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ianhambleton/bnr-refit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bnr-refit
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../00_Intro/overview/" class="md-tabs__link">
+          
+  
+  
+  Intro
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_Workflow/overview/" class="md-tabs__link">
+          
+  
+  
+  Workflow
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../sources/" class="md-tabs__link">
+          
+  
+  
+  Data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_Reporting/analytics-overview/" class="md-tabs__link">
+          
+  
+  
+  Analysis and Reporting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_Technical/stata/" class="md-tabs__link">
+          
+  
+  
+  Technical
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05_Training/overview/" class="md-tabs__link">
+          
+  
+  
+  Training
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BNR Analytics System Refit" class="md-nav__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    BNR Analytics System Refit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ianhambleton/bnr-refit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bnr-refit
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Intro
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/background/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Background
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/timeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Timeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/to-do/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tasks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_Intro/sitemap-diagram-vertical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sitemap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Workflow
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Workflow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/pre-redcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    pre-REDCap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/redcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    REDCap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/post-redcap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    post-REDCap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cleaning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Cleaning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../signoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Signoff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Dataset Release
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Release
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Scope
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Definitions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Responsibilities
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cvd-case-sign-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. CVD Case Sign-off
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cumulative-dataset-release" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cumulative Dataset Release
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-tiered-dataset-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Tiered Dataset Creation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-identifiability-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Identifiability Risk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-access-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Access Levels
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-audit-and-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Audit and Logs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-data-integrity-and-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Data Integrity and Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-version-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Version Control
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-review-and-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Review and Updates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dataset-dissemination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Dissemination
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Analysis and Reporting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Analysis and Reporting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/analytics-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/sap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/monthly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monthly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/annual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/other-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Technical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/stata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stata Algorithms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menu System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    No-Code Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Training
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Training
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Training/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Training/selfpaced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-paced Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ianhambleton/bnr-refit/edit/master/docs/02_Data/dataset-release.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="bnr-continuous-dataset-release-and-tiered-access">BNR Continuous Dataset Release and Tiered Access<a class="headerlink" href="#bnr-continuous-dataset-release-and-tiered-access" title="Permanent link">&para;</a></h1>
+<style>
+.red-text {
+  color: red;
+  background-color: yellow;
+  font-weight: normal;
+}
+</style>
+
+<p><strong>Document Type:</strong> Standard Operating Procedure (SOP)<br />
+<strong>Document Version:</strong> v0.9<br />
+<strong>Effective Date:</strong> <span class="red-text">[Insert Date]</span><br />
+<strong>Author:</strong> Ian Hambleton<br />
+<strong>Approved by:</strong> Christina Howitt - BNR Technical Lead  </p>
+<hr />
+<h2 id="1-purpose">1. Purpose<a class="headerlink" href="#1-purpose" title="Permanent link">&para;</a></h2>
+<p>To outline the standardized process for: 
+- Monthly release of cumulative data for the cardiovascular (CVD) components of the BNR, with datasets released separately as <em>acute myocardial infarction (AMI)</em> and <em>stroke</em>.
+- Creation of tiered dataset versions based on data sensitivity.
+-  Controlled access to datasets according to dataset tier, user roles and authorizations.</p>
+<hr />
+<h2 id="2-scope">2. Scope<a class="headerlink" href="#2-scope" title="Permanent link">&para;</a></h2>
+<p>This SOP applies to all personnel involved in BNR data processing, analysis, and dissemination related to cardiovascular diseases (AMI and stroke).</p>
+<h2 id="3-definitions">3. Definitions<a class="headerlink" href="#3-definitions" title="Permanent link">&para;</a></h2>
+<p><strong>Full Dataset:</strong> Contains all identifiable and clinical information. 
+<span class="red-text">For a full data dictionary, see XX</span></p>
+<p><strong>De-identified Dataset:</strong> Direct identifiers removed; may contain dates and quasi-identifiers. 
+<span class="red-text">For de-identification details, see XX</span></p>
+<p><strong>Anonymized Dataset:</strong> Irreversibly stripped of identifiers and indirectly identifying information. 
+<span class="red-text">For anonymisation details, see XX</span></p>
+<p><strong>Primary Data Points:</strong> Data points required to conduct the core analytical output from the BNR. For CVD cases, these primary data points will allow the calculation of CVD incidence, mortality, 28-day survival <br />
+<span class="red-text">For details, see data dictionary and CVD analysis plan</span></p>
+<p><strong>Sign-off:</strong> Approval step confirming a dataset version is ready for release.</p>
+<h2 id="4-responsibilities">4. Responsibilities<a class="headerlink" href="#4-responsibilities" title="Permanent link">&para;</a></h2>
+<p>These responsibilities may not exist as separate roles within the BNR. Roles should be allocated and formalised with staff.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QC Coordinator</td>
+<td>Weekly data cleaning, QC logging, anomaly flagging</td>
+</tr>
+<tr>
+<td>Data Abstractors</td>
+<td>Timely data entry and verification</td>
+</tr>
+<tr>
+<td>Statistician</td>
+<td>Versioning, dataset creation scripts, and documentation</td>
+</tr>
+<tr>
+<td>Technical Lead</td>
+<td>Final sign-off on dataset release</td>
+</tr>
+<tr>
+<td>Data Access Manager</td>
+<td>Access control oversight and authorization</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-cvd-case-sign-off">5. CVD Case Sign-off<a class="headerlink" href="#5-cvd-case-sign-off" title="Permanent link">&para;</a></h2>
+<p><span class="red-text">Clarify Process</span></p>
+<p><strong>Timeline:</strong> Each Monday</p>
+<p>The cleaning of data from abstracted CVD cases is a continuous BNR process. At some point, there are no further data queries related to an abstracted case, and that case is then ready for review and sign-off by the BNR Technical Lead. </p>
+<p>For each CVD case, the sign-off process should include the following steps:</p>
+<p><strong>Tasks:</strong>
+- Final review of current QC status. 
+- Final review of audit trail for QC corrections.
+- Final review of <strong>primary</strong> data points
+- For missing data points, ensure reason for missingness exists in REDCap. 
+- Return remaining anomolies to QC team for correction within 1 week.
+- Individual REDCap sign-off of completed case records by Team Lead.</p>
+<hr />
+<h2 id="6-cumulative-dataset-release">6. Cumulative Dataset Release<a class="headerlink" href="#6-cumulative-dataset-release" title="Permanent link">&para;</a></h2>
+<p>A cumulative release of the <em>CVD-AMI</em> dataset and the <em>CVD-Stroke</em> dataset will be created once each month. </p>
+<p><strong>Release Date:</strong> First working day of each month</p>
+<p><strong>Datasets:</strong> </p>
+<ul>
+<li>One AMI dataset, </li>
+<li>One stroke dataset, </li>
+<li>One combined CVD dataset</li>
+</ul>
+<p><strong>Included records:</strong> All cumulative releases + all CVD cases for which abstraction has been completed and the REDCap case record has been electronically-signed and locked by the BNR Team Lead as clean. </p>
+<p><strong>Dataset Naming Convention:</strong></p>
+<ul>
+<li>
+<p><code>BNR-CVD_&lt;TYPE&gt;_&lt;TIER&gt;_&lt;YYYYMM&gt;.dta</code></p>
+</li>
+<li>
+<p>(Example) <code>BNR_-_CVD_AMI_DEID_202509.dta</code></p>
+</li>
+<li>
+<p>(Example) <code>BNR_CVD_STROKE_ANON_202509.dta</code></p>
+</li>
+</ul>
+<p><strong>Release Folder Structure:</strong></p>
+<ul>
+<li>
+<p><code>/data/releases/YYYY/MM/</code></p>
+</li>
+<li>
+<p><code>FULL/</code></p>
+</li>
+<li>
+<p><code>DEID/</code></p>
+</li>
+<li>
+<p><code>ANON/</code></p>
+</li>
+</ul>
+<p><strong>Dataset Formats</strong>
+Each released dataset will be provided in multiple formats:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.dta</code></td>
+<td><strong>Stata binary file</strong> (primary working format, includes labels, formats, internal metadata)</td>
+</tr>
+<tr>
+<td><code>.csv</code></td>
+<td><strong>Non-proprietary, comma-separated format</strong> (for general use, readable in most statistical software and Excel)</td>
+</tr>
+<tr>
+<td><code>.json</code></td>
+<td><strong>Machine-readable format</strong> useful for integration with dashboards, data visualization tools, or APIs</td>
+</tr>
+<tr>
+<td><code>.txt</code></td>
+<td><strong>Metadata file</strong> summarizing variables, definitions, coding, and notes (accompanies each release)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-tiered-dataset-creation">7. Tiered Dataset Creation<a class="headerlink" href="#7-tiered-dataset-creation" title="Permanent link">&para;</a></h2>
+<h4 id="see-the-dataset-dissemination-sop-for-details"><span class="red-text">See the dataset dissemination SOP for details.</span><a class="headerlink" href="#see-the-dataset-dissemination-sop-for-details" title="Permanent link">&para;</a></h4>
+<p><strong>Small Island Privacy Considerations:</strong> Given the BNR's context in Barbados, a small island developing state (SIDS) with a population of ~280,000, the risk of potential re-identification from seemingly benign combinations of data is higher than in larger jurisdictions. Even when direct identifiers are removed, indirect identifiers ("quasi-identifiers") may allow individuals to be re-identified when cross-referenced with external datasets or local knowledge. This consideration is key in our process of de-identification (<a href="#72-de-identified-dataset">section 7.2</a>), anonymisation (<a href="#73-anonymised-dataset">section 7.3</a>), and review of identifiability risk (<a href="#8-identifiability-risk">Section 8</a>).</p>
+<h3 id="71-full-dataset">7.1. Full Dataset<a class="headerlink" href="#71-full-dataset" title="Permanent link">&para;</a></h3>
+<p>These datasets are maintained as an Individual Level Data (ILD), with one row of data per CVD event. All collected variables are retained in this dataset, including names, exact dates, hospital IDs. For internal BNR team use only.</p>
+<h3 id="72-de-identified-dataset">7.2. De-identified Dataset<a class="headerlink" href="#72-de-identified-dataset" title="Permanent link">&para;</a></h3>
+<p>These datasets are maintained as Individual Level Data (ILD), with one row of data per CVD event. Compared to the full dataset, de-identified datasets are altered as follows: </p>
+<ul>
+<li>
+<p>Removal of direct identifiers:</p>
+<ul>
+<li>Full names.</li>
+<li>National ID numbers.</li>
+<li>Addresses (home, work).</li>
+<li>Personal contact information.</li>
+</ul>
+</li>
+<li>
+<p>Masking or modification of quasi-identifiers:</p>
+</li>
+<li>
+<p>Exact date of birth → replaced with age at event to nearest year.</p>
+</li>
+<li>Exact dates of admission/treatment/discharge → replaced with month and year.</li>
+<li>Geographic data: parish may be retained; smaller location units (e.g. specific clinics or villages) suppressed.</li>
+<li>Occupation suppressed. </li>
+<li>Rare events suppressed.</li>
+<li>Ethnicity, nationality, or religion suppressed. </li>
+</ul>
+<h3 id="73-anonymised-dataset">7.3. Anonymised Dataset<a class="headerlink" href="#73-anonymised-dataset" title="Permanent link">&para;</a></h3>
+<p>These datasets are maintained as Individual Level Data (ILD), with one row of data per CVD event. Compared to the full dataset, anonymised datasets are altered as follows: </p>
+<p>All identifying and quasi-identifying fields removed or generalized.</p>
+<ul>
+<li>Dates removed entirely (e.g. event year only or time since event).</li>
+<li>Age binned (we use 5-year intervals to allow rate standardization with an 18-group standard world population).</li>
+<li>Rare events suppressed.</li>
+<li>Categorical variables with unique or rare responses either:</li>
+<li>Aggregated (e.g., rare occupations grouped as "Other"), or</li>
+<li>Suppressed</li>
+</ul>
+<h3 id="74-aggregated-dataset">7.4 Aggregated Dataset<a class="headerlink" href="#74-aggregated-dataset" title="Permanent link">&para;</a></h3>
+<p>Aggregated datasets contain group-level summaries (e.g., counts, rates, percentages) with no individual-level records. These are the preferred format for external sharing, including open data releases with registered DOIs.</p>
+<ul>
+<li>
+<p>To protect confidentiality in small-population settings:</p>
+</li>
+<li>
+<p>Suppress all cell counts &lt;5; use &lt;10 for sensitive topics (e.g., HIV, suicide).</p>
+</li>
+<li>
+<p>Apply secondary suppression to prevent deduction of suppressed values from totals.</p>
+</li>
+<li>
+<p>Do not report percentages or rates if the underlying denominator is &lt;20.</p>
+</li>
+<li>
+<p>Use only approved disaggregation levels (e.g., sex, broad age group, national or large-region geography).</p>
+</li>
+</ul>
+<p>Include the following footnote in all outputs:</p>
+<blockquote>
+<p>Counts fewer than 5 have been suppressed to protect confidentiality. Additional suppression may be applied where necessary.</p>
+</blockquote>
+<p>Before release, aggregated datasets must undergo review for suppression compliance, metadata completeness, and re-identification risk. For open data publication, assign a CC BY 4.0 license, register a DOI, and provide a recommended citation format. <span class="red-text">See the dataset dissemination SOP for details.</span></p>
+<h3 id="75-a-note-on-cell-suppression">7.5 A note on cell suppression<a class="headerlink" href="#75-a-note-on-cell-suppression" title="Permanent link">&para;</a></h3>
+<p>Due to the sensitive nature of the BNR, we generally suppress cells where the overall stratified count per year is less than 5 to protect confidentiality. </p>
+<p>Additional suppression is applied where the risk of re-identification is high due to geography, rare outcomes, or small subgroups.”</p>
+<p><strong>Our general suppression practices:</strong>
+- <em>Primary suppression:</em> Always suppress the cell that’s under the threshold.</p>
+<ul>
+<li>
+<p><em>Secondary suppression:</em> Suppress other cells as needed to prevent back-calculation (especially in totals).</p>
+</li>
+<li>
+<p><em>Sensitive topics:</em> Use &lt;5 or even &lt;10 depending on severity (e.g., suicide, HIV, domestic violence).</p>
+</li>
+<li>
+<p><em>Aggregated data:</em> Consider rounding or ranges if suppression would remove too much information.</p>
+</li>
+</ul>
+<hr />
+<h2 id="8-identifiability-risk">8. Identifiability Risk<a class="headerlink" href="#8-identifiability-risk" title="Permanent link">&para;</a></h2>
+<p>To ensure appropriate anonymization, each month we will perform an analytical review of identifiability risk.  </p>
+<p><strong>Small Cell Count Suppression</strong></p>
+<ul>
+<li>
+<p>Run frequency tables for all combinations of age, sex, event type, and geography.</p>
+</li>
+<li>
+<p>Suppress cells with n &lt; 5.</p>
+</li>
+</ul>
+<p><strong>Re-identification Risk Analysis</strong></p>
+<p>Perform k-anonymity / l-diversity checks across:</p>
+<ul>
+<li>
+<p>Age × Sex × Parish</p>
+</li>
+<li>
+<p>Age × Event type × Admission month</p>
+</li>
+<li>
+<p>Age × Outcome × Length of stay</p>
+</li>
+</ul>
+<p>If k &lt; 5, aggregate or suppress variable combinations.</p>
+<p><strong>Human Oversight</strong></p>
+<p>A designated Data Privacy Officer or equivalent will manually review output prior to dataset sign-off. Any concerns of potential identifiability are flagged and discussed with the Technical Lead prior to release.</p>
+<hr />
+<h2 id="9-access-levels">9. Access Levels<a class="headerlink" href="#9-access-levels" title="Permanent link">&para;</a></h2>
+<p>There are levels of proposed access for the four dataset types (full dataset, de-identified, anonymised, aggregated).</p>
+<table>
+<thead>
+<tr>
+<th>Dataset Tier</th>
+<th>Typical Users</th>
+<th>Access Level</th>
+<th>Approval Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FULL</td>
+<td>Internal registry staff</td>
+<td>Read/Write</td>
+<td>Technical Lead</td>
+</tr>
+<tr>
+<td>DE-IDENTIFIED</td>
+<td>Approved researchers with IRB approval</td>
+<td>Read-only</td>
+<td>Technical Lead</td>
+</tr>
+<tr>
+<td>ANONYMIZED</td>
+<td>General public, policy makers</td>
+<td>Read-only</td>
+<td>None (Open Access)</td>
+</tr>
+<tr>
+<td>AGGREGATED</td>
+<td>General public, policy makers</td>
+<td>Read-only</td>
+<td>None (Open Access)</td>
+</tr>
+</tbody>
+</table>
+<p>Request Process:
+- Access request form
+- MOH/IRB approvals
+- Review by Data Access Manager</p>
+<hr />
+<h2 id="10-audit-and-logs">10. Audit and Logs<a class="headerlink" href="#10-audit-and-logs" title="Permanent link">&para;</a></h2>
+<p>Maintain logs for:
+- Dataset creation and versioning (automated timestamps)
+- Sign-offs and access approvals
+- Dataset download activity</p>
+<hr />
+<h2 id="11-data-integrity-and-security">11. Data Integrity and Security<a class="headerlink" href="#11-data-integrity-and-security" title="Permanent link">&para;</a></h2>
+<ul>
+<li>All scripts and data securely stored and version controlled</li>
+<li>Monthly backups performed and archived</li>
+<li>Encryption always required for external transfers</li>
+</ul>
+<hr />
+<h2 id="12-version-control">12. Version Control<a class="headerlink" href="#12-version-control" title="Permanent link">&para;</a></h2>
+<p>Each dataset release includes:
+- Metadata file (<code>.txt</code>)
+- Record of total cases and changes since last release
+- Stored in: BNR-CVD_METADATA_<YYYYMM>.txt</p>
+<hr />
+<h2 id="13-review-and-updates">13. Review and Updates<a class="headerlink" href="#13-review-and-updates" title="Permanent link">&para;</a></h2>
+<ul>
+<li>SOP reviewed annually or after major system or policy changes</li>
+<li>Changes approved by BNR governance team</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "toc.integrate", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
+      
+        <script src="../../js/mermaid-init.js"></script>
+      
+    
+  </body>
+</html>
