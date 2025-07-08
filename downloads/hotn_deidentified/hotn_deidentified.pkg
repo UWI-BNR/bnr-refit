@@ -1,5 +1,5 @@
 HotN Data Release (De-identified dataset)
-d hotn_lim  Package to download and describe the Health of the Nation 2012 survey data.
+d hotn_deidentified  Package to download and describe the Health of the Nation 2012 survey data.
 d
 d HOTN Survey data release by Ian Hambleton
 d Distribution Date: 20-June-2014
