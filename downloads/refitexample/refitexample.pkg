@@ -5,8 +5,6 @@ d dialogs
 d menus
 d help
 
-f refitexample.toc
-f refitexample.pkg
 f ado/refitexample_summary.ado
 f do/dummydata.do
 f do/analysis.do
