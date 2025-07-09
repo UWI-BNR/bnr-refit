@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/04_Technical/downloads/">
+        <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/04_Technical/downloads-deprecated1/">
       
       
-        <link rel="prev" href="../interface/">
+        <link rel="prev" href="../../03_Reporting/sap/">
       
       
-        <link rel="next" href="../../05_Training/overview/">
+        <link rel="next" href="../downloads/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Downloads - BNR Analytics System Refit</title>
+        <title>Downloads deprecated1 - BNR Analytics System Refit</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#download-tezt-zip" class="md-skip">
+        <a href="#sample-stata-package-1" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Downloads
+              Downloads deprecated1
             
           </span>
         </div>
@@ -1197,30 +1197,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Downloads
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../downloads/" class="md-nav__link">
         
   
   
@@ -1231,33 +1211,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#download-tezt-zip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Download tezt zip
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1391,9 +1344,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download-tezt-zip" class="md-nav__link">
+  <a href="#sample-stata-package-1" class="md-nav__link">
     <span class="md-ellipsis">
-      Download tezt zip
+      Sample Stata Package 1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-stata-package-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Stata Package 2
     </span>
   </a>
   
@@ -1415,7 +1377,7 @@
 
 
   
-    <a href="https://github.com/ianhambleton/bnr-refit/edit/master/docs/04_Technical/downloads.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/ianhambleton/bnr-refit/edit/master/docs/04_Technical/downloads-deprecated1.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1423,11 +1385,23 @@
   
 
 
-  <h1>Downloads</h1>
+  <h1>Downloads deprecated1</h1>
 
 <p>Below are downloadable resources for the BNR Refit Analytics system.</p>
-<h2 id="download-tezt-zip">Download tezt zip<a class="headerlink" href="#download-tezt-zip" title="Permanent link">&para;</a></h2>
-<p>Test do files: <a href="https://ianhambleton.github.io/bnr-refit/04_Technical/downloads/bnr-test.zip">Download bnr-test.zip</a></p>
+<h2 id="sample-stata-package-1">Sample Stata Package 1<a class="headerlink" href="#sample-stata-package-1" title="Permanent link">&para;</a></h2>
+<p>Package to install HotN de-identified dataset and help files. To describe the package available (copy and paste this into the Stata command line):</p>
+<div class="highlight"><pre><span></span><code><span class="k">net describe</span> hotn_deidentified<span class="m">.</span>pkg, from(<span class="s">&quot;https://ianhambleton.github.io/bnr-refit/downloads/hotn_deidentified/&quot;</span>)
+</code></pre></div>
+<p>To install directly (copy and paste this into the Stata command line):
+<div class="highlight"><pre><span></span><code><span class="k">net</span> install hotn_deidentified<span class="m">.</span>pkg, from(<span class="s">&quot;https://ianhambleton.github.io/bnr-refit/downloads/hotn_deidentified/&quot;</span>)
+</code></pre></div></p>
+<h2 id="sample-stata-package-2">Sample Stata Package 2<a class="headerlink" href="#sample-stata-package-2" title="Permanent link">&para;</a></h2>
+<p>Package to simulate a small analysis, from a Stata menu + dialogue box, with PDF report creation. To describe the package available (copy and paste this into the Stata command line):</p>
+<div class="highlight"><pre><span></span><code><span class="k">net describe</span> refitexample<span class="m">.</span>pkg, from(<span class="s">&quot;https://ianhambleton.github.io/bnr-refit/downloads/refitexample/&quot;</span>)
+</code></pre></div>
+<p>To install directly (copy and paste this into the Stata command line):
+<div class="highlight"><pre><span></span><code><span class="k">net</span> install refitexample<span class="m">.</span>pkg, from(<span class="s">&quot;https://ianhambleton.github.io/bnr-refit/downloads/refitexample/&quot;</span>)
+</code></pre></div></p>
 
 
 
