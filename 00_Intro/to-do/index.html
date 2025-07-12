@@ -576,24 +576,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#completed" class="md-nav__link">
-    <span class="md-ellipsis">
-      🟩 Completed
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#in-progress" class="md-nav__link">
-    <span class="md-ellipsis">
-      🟨 In Progress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#upcoming-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       🟥 Upcoming Tasks
@@ -1456,24 +1438,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#completed" class="md-nav__link">
-    <span class="md-ellipsis">
-      🟩 Completed
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#in-progress" class="md-nav__link">
-    <span class="md-ellipsis">
-      🟨 In Progress
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#upcoming-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       🟥 Upcoming Tasks
@@ -1512,35 +1476,20 @@
 <h2 id="to-do-list-12-july-2025">To Do List (12 -July-2025)<a class="headerlink" href="#to-do-list-12-july-2025" title="Permanent link">&para;</a></h2>
 <h3 id="stage-0-pre-analytics">STAGE 0. Pre-Analytics<a class="headerlink" href="#stage-0-pre-analytics" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>kanban
-  column1[Done]
-    task1[Prepare to-do list]</code></pre>
-<pre class="mermaid"><code>
-sankey-beta
+  🟩 To Do
+    cvd-dat       [CVD dataset]@{ assigned: Jacqui, priority: }
+    cvd-do        [CVD Stata **do** files]@{ assigned: Jacqui, priority: }
+    cvd-doc       [CVD documents]@{ assigned: Jacqui, priority: }
 
-Bio-conversion,Losses,26.862
+  🟨 In Progress
+    sop-release   [SOP: Release data]@{ assigned: , priority: }
+    sop-diss      [SOP: Disseminate data]@{ assigned: , priority: }
 
-Bio-conversion,Solid,280.322
-
-Bio-conversion,Gas,81.144</code></pre>
-<h2 id="completed">🟩 Completed<a class="headerlink" href="#completed" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[x] Set up <code>bnr-refit</code> project folder</li>
-<li>[x] SOP drafts completed</li>
-<li>[ ] Dataset Release  </li>
-<li>[x] Build simple site navigation tree in <code>mkdocs.yml</code></li>
-</ul>
-<hr />
-<h2 id="in-progress">🟨 In Progress<a class="headerlink" href="#in-progress" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Work with JCampbell to achieve the following</li>
-<li>[ ] Clean dataset releases</li>
-<li>[ ] All accompanying DO files</li>
-<li>[ ] All accompanying documents</li>
-<li>[ ] Write draft SOPs for Dataset Dissemination </li>
-<li>[ ] Finalise initial structure for MkDocs documentation</li>
-<li>[ ] Edit mermaid timeline</li>
-</ul>
-<hr />
+  🟥 Done
+    gantt         [Gantt chart]@{ assigned: , priority: }
+    folder        [Project folder structure: bnr-refit]@{ assigned: , priority: }
+</code></pre>
+<h3 id="stage-1-analytics">STAGE 1. Analytics<a class="headerlink" href="#stage-1-analytics" title="Permanent link">&para;</a></h3>
 <h2 id="upcoming-tasks">🟥 Upcoming Tasks<a class="headerlink" href="#upcoming-tasks" title="Permanent link">&para;</a></h2>
 <ul>
 <li>[ ] Explore how to understand case-completeness</li>
