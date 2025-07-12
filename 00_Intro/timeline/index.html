@@ -1398,27 +1398,37 @@
 <p>This timeline outlines the planned activities for the BNR Refit Project, which runs from January 2025 to March 2026. The project focuses on enhancing analytics, automating report generation, simplifying access via a code-free interface, and building robust training resources for staff. It is organized into four key phases and includes time for wrap-up and final testing.</p>
 <pre class="mermaid"><code>gantt
     title BNR Refit Project Timeline (2025–2026)
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %Y
+    dateFormat  YY-MM
+    axisFormat  %b
 
-    section "PHASE 1 - Analytics System Assessment"
-    Audit current Stata algorithms            :a1, 2025-01-01, 75d
-    Develop dataset release process           :a2, after a1, 45d
+    section PHASE 0
+    Contract Wait                           :done, a1, 2024-11-31, 120d
+    Dataset Wait                            :crit, 2025-02-01, 180d
 
-    section "PHASE 2 - Analytics Enhancement"
-    Automate analytics (monthly, Q, A)        :b1, after a2, 60d
-    Automate reports                          :b2, after b1, 45d
+    section PHASE 1 - ASSESS ANALYTICS
+    Audit Do files                          :active, b1, 2025-08-01, 30d
+    Data release process                    :active, b2, after b1, 14d
+    Data dissemination process              :active, b3, after b1, 14d
+    Web Report                              :milestone, m1
 
-    section "PHASE 3 - Code-Free Access"
-    Build Stata menu system                   :c1, after b2, 30d
-    Develop install SOP                       :c2, after c1, 15d
+    section PHASE 2 - NEW ANALYTICS
+    Re-write report (Annual)                :c1, after b3, 21d
+    Re-write report (Monthly)               :c2, after c1, 21d
+    Re-write reports (Admin)                :c3, after c2, 21d
+    Do Files                                :milestone, m2
 
-    section "PHASE 4 - System Training"
-    Deliver virtual training                  :d1, 2025-11-01, 15d
-    Build GitBook training site               :d2, after d1, 60d
+    section PHASE 3 - CODE-FREE ACCESS
+    Build Stata menu system                 :d1, after c3, 30d
+    Installation SOP                        :d2, after d1, 7d
+    Menu system                             :milestone, m3
 
-    section "Buffer and Wrap-Up"
-    Final testing and wrap-up                 :z1, 2026-01-15, 60d</code></pre>
+    section PHASE 4 - SYSTEM TRAINING
+    Build online Web Manual                 :e1, 2025-07-01, 210d
+    Asynchronous training                   :e2, after e1, 14d
+    Web resource                            :milestone, m4
+
+    section WRAP-UP
+    Final testing and wrap-up               :f1, after e2, 30d</code></pre>
 
 
 
