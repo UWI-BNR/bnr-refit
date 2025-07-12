@@ -1692,17 +1692,9 @@
 
 
 <h1 id="bnr-continuous-dataset-release-and-tiered-access">BNR Continuous Dataset Release and Tiered Access<a class="headerlink" href="#bnr-continuous-dataset-release-and-tiered-access" title="Permanent link">&para;</a></h1>
-<style>
-.red-text {
-  color: red;
-  background-color: yellow;
-  font-weight: normal;
-}
-</style>
-
 <p><strong>Document Type:</strong> Standard Operating Procedure (SOP)<br />
 <strong>Document Version:</strong> v0.9<br />
-<strong>Effective Date:</strong> <span class="red-text">[Insert Date]</span><br />
+<strong>Effective Date:</strong> <mark>[Insert Date]</mark><br />
 <strong>Author:</strong> Ian Hambleton<br />
 <strong>Approved by:</strong> Christina Howitt - BNR Technical Lead  </p>
 <hr />
@@ -1715,14 +1707,14 @@
 <h2 id="2-scope">2. Scope<a class="headerlink" href="#2-scope" title="Permanent link">&para;</a></h2>
 <p>This SOP applies to all personnel involved in BNR data processing, analysis, and dissemination related to cardiovascular diseases (AMI and stroke).</p>
 <h2 id="3-definitions">3. Definitions<a class="headerlink" href="#3-definitions" title="Permanent link">&para;</a></h2>
-<p><strong>Full Dataset:</strong> Contains all identifiable and clinical information. 
-<span class="red-text">For a full data dictionary, see XX</span></p>
-<p><strong>De-identified Dataset:</strong> Direct identifiers removed; may contain dates and quasi-identifiers. 
-<span class="red-text">For de-identification details, see XX</span></p>
-<p><strong>Anonymized Dataset:</strong> Irreversibly stripped of identifiers and indirectly identifying information. 
-<span class="red-text">For anonymisation details, see XX</span></p>
-<p><strong>Primary Data Points:</strong> Data points required to conduct the core analytical output from the BNR. For CVD cases, these primary data points will allow the calculation of CVD incidence, mortality, 28-day survival <br />
-<span class="red-text">For details, see data dictionary and CVD analysis plan</span></p>
+<p><strong>Full Dataset:</strong> Contains all identifiable and clinical information.<br />
+<mark>For a full data dictionary, see XX</mark></p>
+<p><strong>De-identified Dataset:</strong> Direct identifiers removed; may contain dates and quasi-identifiers.<br />
+<mark>For de-identification details, see XX</mark></p>
+<p><strong>Anonymized Dataset:</strong> Irreversibly stripped of identifiers and indirectly identifying information.  <br />
+<mark>For anonymisation details, see XX</mark></p>
+<p><strong>Primary Data Points:</strong> Data points required to conduct the core analytical output from the BNR. For CVD cases, these primary data points will allow the calculation of CVD incidence, mortality, 28-day survival. <br />
+<mark>For details, see data dictionary and CVD analysis plan</mark></p>
 <p><strong>Sign-off:</strong> Approval step confirming a dataset version is ready for release.</p>
 <h2 id="4-responsibilities">4. Responsibilities<a class="headerlink" href="#4-responsibilities" title="Permanent link">&para;</a></h2>
 <p>These responsibilities may not exist as separate roles within the BNR. Roles should be allocated and formalised with staff.</p>
@@ -1758,7 +1750,7 @@
 </table>
 <hr />
 <h2 id="5-cvd-case-sign-off">5. CVD Case Sign-off<a class="headerlink" href="#5-cvd-case-sign-off" title="Permanent link">&para;</a></h2>
-<p><span class="red-text">Clarify Process</span></p>
+<p><mark>Clarify Process</mark></p>
 <p><strong>Timeline:</strong> Each Monday</p>
 <p>The cleaning of data from abstracted CVD cases is a continuous BNR process. At some point, there are no further data queries related to an abstracted case, and that case is then ready for review and sign-off by the BNR Technical Lead. </p>
 <p>For each CVD case, the sign-off process should include the following steps:</p>
@@ -1837,7 +1829,7 @@ Each released dataset will be provided in multiple formats:</p>
 </table>
 <hr />
 <h2 id="7-tiered-dataset-creation">7. Tiered Dataset Creation<a class="headerlink" href="#7-tiered-dataset-creation" title="Permanent link">&para;</a></h2>
-<h4 id="see-the-dataset-dissemination-sop-for-details"><span class="red-text">See the dataset dissemination SOP for details.</span><a class="headerlink" href="#see-the-dataset-dissemination-sop-for-details" title="Permanent link">&para;</a></h4>
+<h4 id="see-the-dataset-dissemination-sop-for-details"><mark>See the dataset dissemination SOP for details</mark><a class="headerlink" href="#see-the-dataset-dissemination-sop-for-details" title="Permanent link">&para;</a></h4>
 <p><strong>Small Island Privacy Considerations:</strong> Given the BNR's context in Barbados, a small island developing state (SIDS) with a population of ~280,000, the risk of potential re-identification from seemingly benign combinations of data is higher than in larger jurisdictions. Even when direct identifiers are removed, indirect identifiers ("quasi-identifiers") may allow individuals to be re-identified when cross-referenced with external datasets or local knowledge. This consideration is key in our process of de-identification (<a href="#72-de-identified-dataset">section 7.2</a>), anonymisation (<a href="#73-anonymised-dataset">section 7.3</a>), and review of identifiability risk (<a href="#8-identifiability-risk">Section 8</a>).</p>
 <h3 id="71-full-dataset">7.1. Full Dataset<a class="headerlink" href="#71-full-dataset" title="Permanent link">&para;</a></h3>
 <p>These datasets are maintained as an Individual Level Data (ILD), with one row of data per CVD event. All collected variables are retained in this dataset, including names, exact dates, hospital IDs. For internal BNR team use only.</p>
@@ -1899,7 +1891,8 @@ Each released dataset will be provided in multiple formats:</p>
 <blockquote>
 <p>Counts fewer than 5 have been suppressed to protect confidentiality. Additional suppression may be applied where necessary.</p>
 </blockquote>
-<p>Before release, aggregated datasets must undergo review for suppression compliance, metadata completeness, and re-identification risk. For open data publication, assign a CC BY 4.0 license, register a DOI, and provide a recommended citation format. <span class="red-text">See the dataset dissemination SOP for details.</span></p>
+<p>Before release, aggregated datasets must undergo review for suppression compliance, metadata completeness, and re-identification risk. For open data publication, assign a CC BY 4.0 license, register a DOI, and provide a recommended citation format.<br />
+<mark>See the dataset dissemination SOP for details.</mark></p>
 <h3 id="75-a-note-on-cell-suppression">7.5 A note on cell suppression<a class="headerlink" href="#75-a-note-on-cell-suppression" title="Permanent link">&para;</a></h3>
 <p>Due to the sensitive nature of the BNR, we generally suppress cells where the overall stratified count per year is less than 5 to protect confidentiality. </p>
 <p>Additional suppression is applied where the risk of re-identification is high due to geography, rare outcomes, or small subgroups.”</p>
