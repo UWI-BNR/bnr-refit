@@ -578,7 +578,7 @@
         <li class="md-nav__item">
   <a href="#completed" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Completed
+      🟩 Completed
     </span>
   </a>
   
@@ -587,7 +587,7 @@
         <li class="md-nav__item">
   <a href="#in-progress" class="md-nav__link">
     <span class="md-ellipsis">
-      In Progress
+      🟨 In Progress
     </span>
   </a>
   
@@ -596,7 +596,7 @@
         <li class="md-nav__item">
   <a href="#upcoming-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Upcoming Tasks
+      🟥 Upcoming Tasks
     </span>
   </a>
   
@@ -1458,7 +1458,7 @@
         <li class="md-nav__item">
   <a href="#completed" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ Completed
+      🟩 Completed
     </span>
   </a>
   
@@ -1467,7 +1467,7 @@
         <li class="md-nav__item">
   <a href="#in-progress" class="md-nav__link">
     <span class="md-ellipsis">
-      In Progress
+      🟨 In Progress
     </span>
   </a>
   
@@ -1476,7 +1476,7 @@
         <li class="md-nav__item">
   <a href="#upcoming-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Upcoming Tasks
+      🟥 Upcoming Tasks
     </span>
   </a>
   
@@ -1511,31 +1511,18 @@
 <hr />
 <h2 id="to-do-list-12-july-2025">To Do List (12 -July-2025)<a class="headerlink" href="#to-do-list-12-july-2025" title="Permanent link">&para;</a></h2>
 <h3 id="stage-0-pre-analytics">STAGE 0. Pre-Analytics<a class="headerlink" href="#stage-0-pre-analytics" title="Permanent link">&para;</a></h3>
-<p>```mermaid
-kanban
-  Todo
-    [Create Documentation]
-    docs[Create Blog about the new diagram]
-  [In progress]
-    id6[Create renderer so that it works in all cases. We also add some extra text here for testing purposes. And some more just for the extra flare.]
-  id11[Done]
-    id5[define getData]
-    id2[Title of diagram is more than 100 chars when user duplicates diagram with 100 char]@{ ticket: MC-2036, priority: 'Very High'}
-    id3[Update DB function]@{ ticket: MC-2037, assigned: knsv, priority: 'High' }
-<div class="highlight"><pre><span></span><code>### STAGE 1. ASSESS ANALYTICS
- ```mermaid
-kanban
-  Todo
-    [Create Documentation]
-    docs[Create Blog about the new diagram]
-  [In progress]
-    id6[Create renderer so that it works in all cases. We also add some extra text here for testing purposes. And some more just for the extra flare.]
-  id11[Done]
-    id5[define getData]
-    id2[Title of diagram is more than 100 chars when user duplicates diagram with 100 char]@{ ticket: MC-2036, priority: &#39;Very High&#39;}
-    id3[Update DB function]@{ ticket: MC-2037, assigned: knsv, priority: &#39;High&#39; }
-</code></pre></div></p>
-<h2 id="completed">✅ Completed<a class="headerlink" href="#completed" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>kanban
+  column1[Done]
+    task1[Prepare to-do list]</code></pre>
+<pre class="mermaid"><code>
+sankey-beta
+
+Bio-conversion,Losses,26.862
+
+Bio-conversion,Solid,280.322
+
+Bio-conversion,Gas,81.144</code></pre>
+<h2 id="completed">🟩 Completed<a class="headerlink" href="#completed" title="Permanent link">&para;</a></h2>
 <ul>
 <li>[x] Set up <code>bnr-refit</code> project folder</li>
 <li>[x] SOP drafts completed</li>
@@ -1543,7 +1530,7 @@ kanban
 <li>[x] Build simple site navigation tree in <code>mkdocs.yml</code></li>
 </ul>
 <hr />
-<h2 id="in-progress">In Progress<a class="headerlink" href="#in-progress" title="Permanent link">&para;</a></h2>
+<h2 id="in-progress">🟨 In Progress<a class="headerlink" href="#in-progress" title="Permanent link">&para;</a></h2>
 <ul>
 <li>[ ] Work with JCampbell to achieve the following</li>
 <li>[ ] Clean dataset releases</li>
@@ -1554,7 +1541,7 @@ kanban
 <li>[ ] Edit mermaid timeline</li>
 </ul>
 <hr />
-<h2 id="upcoming-tasks">Upcoming Tasks<a class="headerlink" href="#upcoming-tasks" title="Permanent link">&para;</a></h2>
+<h2 id="upcoming-tasks">🟥 Upcoming Tasks<a class="headerlink" href="#upcoming-tasks" title="Permanent link">&para;</a></h2>
 <ul>
 <li>[ ] Explore how to understand case-completeness</li>
 <li>[ ] Review repo_p159</li>
@@ -1650,10 +1637,6 @@ kanban
     
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
-      
-        <script src="https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js"></script>
-      
-        <script src="../../js/mermaid-init.js"></script>
       
     
   </body>
