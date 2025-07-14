@@ -1,0 +1,2 @@
+# BNR Data Structure (Data Dictionary)
+This section will present the BNR data structure, including the core variables collected across all registry components and how they are organised within the REDCap data dictionary. It will describe naming conventions, coding standards, and relationships between forms and events. A downloadable version of the data dictionary may be included for transparency and use in training or harmonisation efforts.

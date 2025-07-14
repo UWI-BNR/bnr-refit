@@ -1,0 +1,2 @@
+# BNR Record Signoff.
+This page will explain the process of monthly dataset signoff within REDCap. It will detail the criteria used to determine that a record is complete and ready for analysis, how these statuses are tracked, and the role of the Quality Control (QC) team in initiating signoff. The aim is to ensure that only validated, high-quality data are included in analytics and reporting pipelines.

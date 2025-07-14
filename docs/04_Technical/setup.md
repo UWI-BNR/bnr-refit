@@ -1,0 +1,2 @@
+# How to setup the BNR Refit System
+This section will offer step-by-step instructions for setting up the BNR analytics and reporting system on a new PC. It will include guidance on installing Stata, linking required directories, loading necessary packages and custom files, and configuring REDCap export templates. It ensures a consistent environment across machines, supporting efficient troubleshooting and updates.

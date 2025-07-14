@@ -1,0 +1,2 @@
+# Data Sources
+This page will describe the range of data sources used by the Barbados National Registry (BNR) for case identification and abstraction. It will include both public and private health sector sources, such as hospital records, laboratory reports, death certificates, and outpatient clinics. The page will also explain active and passive surveillance methods, and discuss how data access and permissions are managed.

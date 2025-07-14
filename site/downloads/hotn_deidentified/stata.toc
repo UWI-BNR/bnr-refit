@@ -1,0 +1,9 @@
+v 3
+d Health of the Nation 2012 (HotN 2012)
+d The Barbados National Health Survey
+d
+d HOTN Survey data release by Ian Hambleton
+d Distribution Date: 20-June-2014
+d Distributes release 4 of the HOTN dataset, and associated Stata help files
+
+p hotn_deidentified (Release 4, limited variables). A package containing HotN dataset and associated help file

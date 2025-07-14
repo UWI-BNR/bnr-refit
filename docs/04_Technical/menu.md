@@ -1,0 +1,2 @@
+# The Stata Menu System
+This section will provide an overview of the custom Stata menuing system developed for the BNR refit. It will explain how the system allows users to run analytics and generate reports via point-and-click menus, reducing the need for command-line interaction. This menu-driven interface ensures that non-programming staff can interact with complex workflows in a safe, controlled manner.

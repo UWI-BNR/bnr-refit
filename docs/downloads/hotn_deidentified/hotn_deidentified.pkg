@@ -1,0 +1,19 @@
+HotN Data Release (De-identified dataset)
+d hotn_deidentified  Package to download and describe the Health of the Nation 2012 survey data.
+d
+d HOTN Survey data release by Ian Hambleton
+d Distribution Date: 20-June-2014
+d Distributes release 4.1 of the HOTN dataset, and associated Stata help files
+ 
+* The following files are included in the HOTN package
+f hotn_v41_limited.dta
+f hotn_pyramid.do
+f hotn_pyramid2.do
+f pyramid1.gph 
+f pyramid3.gph 
+f hotn_design.sthlp
+f hotn_weights.sthlp
+f hotn_fact_sheet.sthlp
+f hotn_dataset_release_notes.sthlp
+f README.txt
+

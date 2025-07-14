@@ -1,0 +1,2 @@
+# Ad-hoc Analytics & Reporting
+This page will capture all non-routine analysis and reporting activities, including custom data requests, one-off studies, academic collaborations, or support for media and policy briefs. It will outline the process for initiating, approving, and archiving ad-hoc analyses to ensure transparency and prevent duplication, while also serving as a showcase of registry responsiveness and value.

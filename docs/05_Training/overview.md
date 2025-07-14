@@ -1,0 +1,2 @@
+# Training Overview
+This section introduces the BNR training resources developed to support users of the refit analytics and reporting system. Training is designed to build user confidence and capacity in data handling, quality control, and reporting workflows. The programme emphasises accessibility and sustainability, with a strong focus on self-paced learning supported by structured materials and embedded help systems within Stata.

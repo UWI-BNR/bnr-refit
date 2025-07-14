@@ -1,0 +1,38 @@
+# Site Map
+
+- **00_Intro/**
+  - bnr-refit-intro (bnr-refit-intro.md)
+  - glossary (glossary.md)
+  - sitemap-diagram-vertical (sitemap-diagram-vertical.md)
+  - sitemap (sitemap.md)
+  - timeline (timeline.md)
+  - to-do (to-do.md)
+- **01_Workflow/**
+  - overview (overview.md)
+  - post-redcap (post-redcap.md)
+  - pre-redcap (pre-redcap.md)
+  - redcap (redcap.md)
+  - storage (storage.md)
+- **02_Data/**
+  - cleaning (cleaning.md)
+  - dataset-dissemination (dataset-dissemination.md)
+  - dataset-release (dataset-release.md)
+  - signoff (signoff.md)
+  - sources (sources.md)
+  - structure (structure.md)
+- **03_Reporting/**
+  - analytics-overview (analytics-overview.md)
+  - annual (annual.md)
+  - monthly (monthly.md)
+  - other-reporting (other-reporting.md)
+  - sap (sap.md)
+- **04_Technical/**
+  - interface (interface.md)
+  - menu (menu.md)
+  - stata (stata.md)
+- **05_Training/**
+  - overview (overview.md)
+  - selfpaced (selfpaced.md)
+- index (index.md)
+- **js/**
+- **styles/**

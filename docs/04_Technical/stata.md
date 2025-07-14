@@ -1,0 +1,2 @@
+# Stata Algorithms
+This page will describe the structure and purpose of the Stata .do and .ado files developed for the BNR analytics and reporting system. It will explain how these scripts transform raw data into cleaned datasets, generate key indicators, and automate report outputs. Each file’s role in the pipeline will be briefly summarised, with links to annotated code where appropriate.

@@ -1,0 +1,2 @@
+# Data Storage
+This section will explain the approach to long-term storage of BNR data, including the handling of monthly extracted data releases. It will discuss file naming conventions, data versioning, secure storage solutions, and how the storage strategy supports reproducibility, transparency, and auditability.
