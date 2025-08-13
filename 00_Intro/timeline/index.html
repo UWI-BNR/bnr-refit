@@ -1427,7 +1427,7 @@
 
   const d = s => new Date(s);
   const addDays = (s, n) => new Date(d(s).getTime() + n*24*3600*1000).toISOString().slice(0,10);
-  const after = end => d(end); // same-day start
+  const after = end => d(end);
 
   // ---- TASKS ----
   const a1 = { phase:'PHASE 0', task:'Contract Wait', start:'2024-11-30', end:'2025-03-30' };
@@ -1498,7 +1498,7 @@
       showlegend: false
     };
     if (isDatasetWait(t)) {
-      return { ...baseBar, marker: { color:'#B04A4A', line:{color:'#000000', width:1.5} } };
+      return { ...baseBar, marker: { color:'#606263ff', line:{color:'#000000', width:1.5} } };
     }
     return { ...baseBar, marker: { color:phaseColor[t.phase], opacity:0.95 } };
   });
@@ -1530,12 +1530,8 @@
     name: 'Milestones'
   };
 
-  // ---- TODAY LINE ----
-  const now = new Date();
-  const todayStr = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())).toISOString().slice(0,10);
-
+  // ---- Layout WITHOUT Today Marker ----
   const height = 40 * (orderedTasks.length + milestones.length * 0.5) + 140;
-
   const layout = {
     barmode: 'stack',
     xaxis: { type: 'date', tickformat: '%b %Y', automargin: true },
@@ -1549,17 +1545,7 @@
       autorange: 'reversed'
     },
     margin: { l: 260, r: 20, t: 10, b: 40 },
-    height,
-    shapes: [{
-      type: 'line', xref: 'x', yref: 'paper',
-      x0: todayStr, x1: todayStr, y0: 0, y1: 1,
-      line: { width: 2, dash: 'dot' }
-    }],
-    annotations: [{
-      x: todayStr, y: 1, yref: 'paper', xref: 'x',
-      xanchor: 'left', yanchor: 'bottom',
-      text: 'Today', showarrow: false, font: { size: 12 }
-    }]
+    height
   };
 
   Plotly.newPlot('ganttPlotly', [...bars, milestoneTrace], layout, {responsive: true});
@@ -1675,6 +1661,8 @@
         <script src="https://unpkg.com/frappe-gantt/dist/frappe-gantt.umd.js"></script>
       
         <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+      
+        <script src="../../js/mermaid-fix.js"></script>
       
     
   </body>
