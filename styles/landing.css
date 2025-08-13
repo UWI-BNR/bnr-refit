@@ -1,0 +1,523 @@
+
+/* FROM CARIBDATA-OUTPUTS */
+/* CaribData brand colors and Montserrat heading font*/
+:root {
+  --md-primary-fg-color: #596b6d;  /* Navy Blue */
+  --md-accent-fg-color: #000000;   /* Burnt Orange */
+  --md-typeset-a-color: #e87a00;
+  --md-text-font: "Open Sans", sans-serif;
+  --md-code-font: "Intel One Mono", monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* Optional: change body text font */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* Optional: override header or nav styling */
+.md-header, .md-tabs {
+  background-color: #596b6d !important; /* Midnight Blue */
+}
+/* Optional: adjust logo size in header */
+.md-header__button.md-logo img {
+  height: 2rem;
+}
+.md-header__button.md-logo img {
+  max-height: none;       /* Prevent unwanted scaling */
+  width: auto;            /* Preserve aspect ratio */
+}
+.md-header__title {
+  line-height: 52px;
+}
+.md-header__title .md-ellipsis {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #ffffff !important;
+}
+/* Link color */
+.md-typeset a {
+  color: #e87a00; /* CaribData Navy Blue */
+  text-decoration: underline;
+}
+/* Link hover color */
+.md-typeset a:hover {
+  color: #e87a00; /* CaribData Burnt Orange */
+  text-decoration: none;
+}
+
+/* CaribData sidebar styling */
+/* Mobile nav link colors — only apply on small screens */
+@media (max-width: 1220px) {
+  .md-nav__link {
+    color: #596b6d !important;
+  }
+
+  .md-nav__link:hover,
+  .md-nav__link:focus,
+  .md-nav__link--active {
+    color: #e87a00 !important;
+  }
+
+  /* Mobile drawer title strip */
+  .md-nav--primary .md-nav__title {
+    background-color: #596b6d !important;
+    color: #2c3e18 !important;
+    font-weight: bold;
+  }
+}
+
+/* Sidebar nav links on desktop */
+.md-sidebar__inner .md-nav__link {
+  color: #596b6d !important;           /* link color */
+  text-decoration: none !important;
+  font-weight: 400;
+}
+
+/* Hover + focus */
+.md-sidebar__inner .md-nav__link:hover,
+.md-sidebar__inner .md-nav__link:focus {
+  color: #e87a00 !important;           /* hover color */
+  text-decoration: underline;
+}
+
+/* Active/selected page link */
+.md-nav__item--active > .md-nav__link {
+  color: #2c3e18 !important;           /* current page color */
+  font-weight: 600;
+}
+
+
+/* Highlight active link */
+.md-nav__item--active > .md-nav__link {
+  color: #2c3e18;
+  font-weight: 400;
+}
+
+/* Recolor blog post category links (e.g. "in story") */
+.md-meta__link {
+  color: #596b6d !important;        /* CaribData Navy Blue */
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.md-meta__link:hover {
+  color: #e87a00 !important;        /* Burnt Orange */
+  text-decoration: underline;
+}
+
+.md-button {
+  background-color: white !important;
+  color: #596b6d !important;
+  border: 2px solid #596b6d !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  padding: 0.6em 1.2em !important;
+  font-family: 'Montserrat', sans-serif !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  font-size: 1.0rem !important;  /* scale for smaller screens */
+}
+
+/* Hover + focus effect */
+.md-button:hover,
+.md-button:focus {
+  background-color: #e87a00 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+.md-button:hover {
+  transform: scale(1.02) !important;
+}
+@media (max-width: 1220px) {
+  .md-button {
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    font-size: 1rem !important;  /* scale for smaller screens */
+  }
+} 
+
+/* EXTERNAL BUTTON */ 
+.md-button-external {
+  background-color: #04517400 !important;
+  color: #596b6d !important;
+  border: 1.5px solid #596b6d !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  border-radius: 6px !important;
+  padding: 0.6em 1.2em !important;
+  font-family: 'Montserrat', sans-serif !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+/* Hover + focus effect */
+.md-button-external:hover,
+.md-button-external:focus {
+  background-color: #e87a00 !important;
+  border: 2px solid #04517400 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+.md-button-external:hover {
+  transform: scale(1.02) !important;
+}
+@media (max-width: 1220px) {
+  .md-button-external {
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    font-size: 0.55rem !important;  /* scale for smaller screens */
+  }
+} 
+
+
+
+
+
+/* EXTERNAL BUTTON 2 
+  Use this button on pages with LHS navigation */ 
+.md-button-external2 {
+  background-color: #04517400 !important;
+  color: #596b6d !important;
+  border: 1.5px solid #596b6d !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  border-radius: 6px !important;
+  padding: 0.6em 1.2em !important;
+  font-family: 'Montserrat', sans-serif !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+/* Hover + focus effect */
+.md-button-external2:hover,
+.md-button-external2:focus {
+  background-color: #e87a00 !important;
+  border: 2px solid #04517400 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+.md-button-external2:hover {
+  transform: scale(1.02) !important;
+}
+@media (max-width: 900px) {
+  .md-button-external2 {
+    width: 100% !important;
+    text-align: center !important;
+    display: block !important;
+    font-size: 1rem !important;  /* scale for smaller screens */
+  }
+} 
+
+/* Sidebar scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 8px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background-color: #bbb;     /* grey thumb */
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Firefox scrollbar */
+.md-sidebar__scrollwrap {
+  scrollbar-color: #bbb transparent;
+  scrollbar-width: thin;
+}
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+/* Ensures the first article block (my landing content) starts flush with the header. */
+.md-content > article:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Applies responsive font sizing and Montserrat to custom heading classes. */ 
+/* clamp() lets the font size adjust between 1rem and 1.5rem depending on screen width. */ 
+/* 300 is a light, elegant weight. */
+  .hero-heading1 {
+  font-size: clamp(1rem, 5vw, 1.5rem) !important;
+  font-weight: 300 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+  .hero-heading2 {
+  font-size: clamp(0.5rem, 5vw, 1.1rem) !important;
+  font-weight: 250 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+  .hero-heading3 {
+  font-size: clamp(0.25rem, 15vw, 1.1rem) !important;
+  font-weight: 250 !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.section-white1 {
+  background-color: #ffffff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem; 
+  padding-right: 2rem;  
+  text-align: left;
+  box-sizing: border-box;
+}
+.section-shaded1 {
+  background-color: #0451740f;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 3rem 2rem;               /* vertical horizontal */
+  text-align: center;
+  box-sizing: border-box;
+}
+.section-white2 {
+  background-color: #ffffff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;  
+  text-align: center;
+  box-sizing: border-box;
+}
+.section-shaded2 {
+  background-color: #0451740f;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;  
+  text-align: center;
+  box-sizing: border-box;
+}
+.section-shaded3 {
+  background-color: #0451740f;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 1rem 1rem;               /* vertical horizontal */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* TEXT ALIGNMENT UTILITY
+   Forces text-align: center when applied */
+.text-center {
+  text-align: center;
+}
+
+/* MARGIN CLEANUP ON LAST CHILDREN
+   Removes extra space after last child elements in sections */
+.section-shaded1 > *:last-child,
+.section-shaded1 .section-content > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-white1 > *:last-child,
+.section-white1 .section-content > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-shaded2 > *:last-child,
+.section-shaded2 .section-content > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-white2 > *:last-child,
+.section-white2 .section-content > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.section-shaded3 > *:last-child,
+.section-shaded3 .section-content > *:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+/* HERO VIDEO SECTION
+   Full-width video banner with upward shift and overlay support */
+.section-full-bleed {
+  position: relative;
+  top: -46px;            /* Shift up */
+  padding-top: 40px;     /* So content isn’t overlapped */
+  padding-bottom: 40px;     /* So content isn’t overlapped */
+  box-sizing: border-box;
+  z-index: 0;
+  border-top: 3px solid #2c3e18;  /* match your header/nav color */  margin-top: 0 !important;
+  /*top: -40px;*/
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* VIDEO Preparation */
+/* VIDEO STYLING
+   Covers the full background area behind text */   
+.section-full-bleed video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* behind everything */
+}
+
+/* OVERLAY TEXT BOX
+   Semi-transparent content box for text over the video */
+.section-full-bleed .content {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: auto;
+  max-width: 700px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2; /* force it on top */
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);  /* black with 50% opacity */
+  border-radius: 8px;
+  color: white;
+}
+
+/* RESPONSIVE TEXT BOX
+   Adjust padding and font size for small screens */
+@media (max-width: 1220px) {
+/* OVERLAY TEXT BOX
+   Semi-transparent content box for text over the video */
+  .section-full-bleed .content {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+.section-full-bleed .content > *:first-child {
+  margin-top: 0 !important;
+}
+.section-full-bleed .content > *:last-child {
+  margin-bottom: 0 !important;
+}
+/* GRID LAYOUT FOR CARDS
+   Flexbox grid for card layout */
+.grid.cards.landing li {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #04517400;
+  padding: 0rem 1.5rem;
+  border-radius: 8px;
+  min-height: 125px;                 /* taller card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;          /* center vertically */
+  align-items: center;              /* center horizontally */
+  text-align: center;
+  box-shadow: 0 0px 0px #04517400;
+  transition: transform 0.2s ease;
+  gap: 0.5rem;                     /* consistent spacing between inner elements */
+}
+
+/* Make all content inside slightly larger */
+.grid.cards.landing li > * {
+  font-size: 1.0rem;
+  line-height: 1.75;
+}
+
+/* Button inside cards */
+.grid.cards.landing li .md-button {
+  font-size: 1.1rem;
+  padding: 0.6em 1.2em;
+}
+
+
+/* Partners section */
+.section-footer-band {
+  margin-top: -24px;  /* nudges the footer up */
+  background-color: #ffffff;
+  /* background-color: #0451740f; */
+  color: black;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0.4rem 1rem;  /* reduced vertical padding */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+  border-bottom: 0px solid #2c3e18;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;       /* allows stacking on small screens */
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.footer-label {
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+  white-space: nowrap;
+}
+
+.footer-logo {
+  height: 32px;
+  max-height: 32px;
+  width: auto;
+  max-width: 100px;
+  object-fit: contain;
+  display: inline-block;
+}
+.logo-uwi {
+  height: 48px;
+  max-height: 48px;
+  max-width: 120px;
+}
+
+.md-content > article:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.grid.cards.landing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* For tablets and mobiles: switch to 1 column */
+@media (max-width: 1220px) {
+  .grid.cards.landing {
+    grid-template-columns: 1fr;
+  }
+}

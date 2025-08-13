@@ -6,6 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="An Online Operations Manual for the 2025 BNR refit.">
+      
+      
+        <meta name="author" content="Ian Hambleton">
       
       
         <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/00_Intro/timeline/">
@@ -17,7 +21,7 @@
         <link rel="next" href="../to-do/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/icons/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
@@ -43,10 +47,16 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CMonospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Monospace"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../styles/landing.css">
+    
+      <link rel="stylesheet" href="../../styles/mermaid.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/frappe-gantt/dist/frappe-gantt.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -60,10 +70,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -88,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="BNR Analytics System Refit" class="md-header__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -114,7 +125,19 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -350,8 +373,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="BNR Analytics System Refit" class="md-nav__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
 
     </a>
     BNR Analytics System Refit
@@ -1396,39 +1418,155 @@
 
 <h1 id="bnr-refit-project-timeline-20252026">BNR Refit Project Timeline (2025–2026)<a class="headerlink" href="#bnr-refit-project-timeline-20252026" title="Permanent link">&para;</a></h1>
 <p>This timeline outlines the planned activities for the BNR Refit Project, which runs from January 2025 to March 2026. The project focuses on enhancing analytics, automating report generation, simplifying access via a code-free interface, and building robust training resources for staff. It is organized into four key phases and includes time for wrap-up and final testing.</p>
-<pre class="mermaid"><code>gantt
-    title BNR Refit Project Timeline (2025–2026)
-    dateFormat  YY-MM
-    axisFormat  %b
+<div id="ganttPlotly" style="width:100%;max-width:100%;height:660px;"></div>
 
-    section PHASE 0
-    Contract Wait                           :done, a1, 2024-11-31, 120d
-    Dataset Wait                            :crit, 2025-02-01, 180d
+<script>
+(window.document$ || { subscribe: (fn) => window.addEventListener('DOMContentLoaded', fn) })
+.subscribe(function () {
+  if (!window.Plotly) return;
 
-    section PHASE 1 - ASSESS ANALYTICS
-    Audit Do files                          :active, b1, 2025-08-01, 30d
-    Data release process                    :active, b2, after b1, 14d
-    Data dissemination process              :active, b3, after b1, 14d
-    Web Report                              :milestone, m1
+  const d = s => new Date(s);
+  const addDays = (s, n) => new Date(d(s).getTime() + n*24*3600*1000).toISOString().slice(0,10);
+  const after = end => d(end); // same-day start
 
-    section PHASE 2 - NEW ANALYTICS
-    Re-write report (Annual)                :c1, after b3, 21d
-    Re-write report (Monthly)               :c2, after c1, 21d
-    Re-write reports (Admin)                :c3, after c2, 21d
-    Do Files                                :milestone, m2
+  // ---- TASKS ----
+  const a1 = { phase:'PHASE 0', task:'Contract Wait', start:'2024-11-30', end:'2025-03-30' };
+  const dataset = { phase:'PHASE 0', task:'Dataset Wait', start:'2025-02-01', end:'2025-07-31' };
 
-    section PHASE 3 - CODE-FREE ACCESS
-    Build Stata menu system                 :d1, after c3, 30d
-    Installation SOP                        :d2, after d1, 7d
-    Menu system                             :milestone, m3
+  const b1 = { phase:'PHASE 1-ASSESS ANALYTICS', task:'Audit Do files', start:'2025-08-01', end:'2025-08-31' };
+  const b2 = { phase:'PHASE 1-ASSESS ANALYTICS', task:'Data release process', start:after(b1.end).toISOString().slice(0,10), end:addDays(b1.end,14) };
+  const b3 = { phase:'PHASE 1-ASSESS ANALYTICS', task:'Data dissemination process', start:after(b1.end).toISOString().slice(0,10), end:addDays(b1.end,14) };
+  const m1_date = b2.end;
 
-    section PHASE 4 - SYSTEM TRAINING
-    Build online Web Manual                 :e1, 2025-07-01, 210d
-    Asynchronous training                   :e2, after e1, 14d
-    Web resource                            :milestone, m4
+  const c1 = { phase:'PHASE 2-NEW ANALYTICS', task:'Re-write report (Annual)', start:b3.end, end:addDays(b3.end,21) };
+  const c2 = { phase:'PHASE 2-NEW ANALYTICS', task:'Re-write report (Monthly)', start:c1.end, end:addDays(c1.end,21) };
+  const c3 = { phase:'PHASE 2-NEW ANALYTICS', task:'Re-write reports (Admin)', start:c2.end, end:addDays(c2.end,21) };
+  const m2_date = c3.end;
 
-    section WRAP-UP
-    Final testing and wrap-up               :f1, after e2, 30d</code></pre>
+  const d1t = { phase:'PHASE 3-CODE-FREE ACCESS', task:'Build Stata menu system', start:c3.end, end:addDays(c3.end,30) };
+  const d2t = { phase:'PHASE 3-CODE-FREE ACCESS', task:'Installation SOP', start:d1t.end, end:addDays(d1t.end,7) };
+  const m3_date = d2t.end;
+
+  const e1 = { phase:'PHASE 4-SYSTEM TRAINING', task:'Build online Web Manual', start:'2025-07-01', end:addDays('2025-07-01',210) };
+  const e2 = { phase:'PHASE 4-SYSTEM TRAINING', task:'Asynchronous training', start:e1.end, end:addDays(e1.end,14) };
+  const m4_date = e2.end;
+
+  const f1 = { phase:'WRAP-UP', task:'Final testing and wrap-up', start:e2.end, end:addDays(e2.end,30) };
+
+  const tasks = [a1, dataset, b1, b2, b3, c1, c2, c3, d1t, d2t, e1, e2, f1];
+
+  // ---- ORDER ----
+  const PHASE_ORDER = [
+    'PHASE 0',
+    'PHASE 1-ASSESS ANALYTICS',
+    'PHASE 2-NEW ANALYTICS',
+    'PHASE 3-CODE-FREE ACCESS',
+    'PHASE 4-SYSTEM TRAINING',
+    'WRAP-UP'
+  ];
+
+  const byPhase = new Map();
+  tasks.forEach(t => {
+    if (!byPhase.has(t.phase)) byPhase.set(t.phase, []);
+    byPhase.get(t.phase).push(t);
+  });
+
+  const phasesOrdered = PHASE_ORDER.filter(p => byPhase.has(p));
+  phasesOrdered.forEach(p => byPhase.get(p).sort((u, v) => d(u.start) - d(v.start)));
+  const orderedTasks = phasesOrdered.flatMap(p => byPhase.get(p));
+
+  // ---- LABELS ----
+  const boldPhase = phase => `<b>${phase}</b>`;
+  const yVals  = orderedTasks.map((t,i) => `row-${i}`);
+  const yTexts = orderedTasks.map(t => `${t.task} • (${boldPhase(t.phase)})`);
+
+  // ---- COLORS ----
+  const palette = ['#045174', '#d97b1d'];
+  const phaseColor = Object.fromEntries(phasesOrdered.map((p, idx) => [p, palette[idx % palette.length]]));
+
+  const isDatasetWait = t =>
+    t.phase === 'PHASE 0' && /dataset\s*wait/i.test(t.task);
+
+  const bars = orderedTasks.map((t, i) => {
+    const baseBar = {
+      type: 'bar',
+      orientation: 'h',
+      y: [yVals[i]],
+      x: [ d(t.end) - d(t.start) ],
+      base: [ t.start ],
+      hovertemplate: `<b>${t.task}</b><br>${t.phase}<br>${t.start} → ${t.end}<extra></extra>`,
+      showlegend: false
+    };
+    if (isDatasetWait(t)) {
+      return { ...baseBar, marker: { color:'#B04A4A', line:{color:'#000000', width:1.5} } };
+    }
+    return { ...baseBar, marker: { color:phaseColor[t.phase], opacity:0.95 } };
+  });
+
+  // ---- MILESTONES ----
+  function lastRowInPhase(phase) {
+    const arr = byPhase.get(phase);
+    const last = arr[arr.length - 1];
+    const idx = orderedTasks.indexOf(last);
+    return yVals[idx];
+  }
+
+  const milestones = [
+    { name:'Web Report (m1)', date:m1_date, y:lastRowInPhase('PHASE 1-ASSESS ANALYTICS') },
+    { name:'Do Files (m2)', date:m2_date, y:lastRowInPhase('PHASE 2-NEW ANALYTICS') },
+    { name:'Menu system (m3)', date:m3_date, y:lastRowInPhase('PHASE 3-CODE-FREE ACCESS') },
+    { name:'Web resource (m4)', date:m4_date, y:lastRowInPhase('PHASE 4-SYSTEM TRAINING') }
+  ];
+
+  const milestoneTrace = {
+    type: 'scatter',
+    mode: 'markers+text',
+    x: milestones.map(m => m.date),
+    y: milestones.map(m => m.y),
+    marker: { symbol:'diamond', size:12, color:'#B04A4A', line:{color:'#000000', width:1.5} },
+    text: milestones.map(m => m.name),
+    textposition: 'right',
+    hovertemplate: '%{text}<br>%{x}<extra></extra>',
+    name: 'Milestones'
+  };
+
+  // ---- TODAY LINE ----
+  const now = new Date();
+  const todayStr = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate())).toISOString().slice(0,10);
+
+  const height = 40 * (orderedTasks.length + milestones.length * 0.5) + 140;
+
+  const layout = {
+    barmode: 'stack',
+    xaxis: { type: 'date', tickformat: '%b %Y', automargin: true },
+    yaxis: {
+      automargin: true,
+      categoryorder: 'array',
+      categoryarray: yVals,
+      tickmode: 'array',
+      tickvals: yVals,
+      ticktext: yTexts,
+      autorange: 'reversed'
+    },
+    margin: { l: 260, r: 20, t: 10, b: 40 },
+    height,
+    shapes: [{
+      type: 'line', xref: 'x', yref: 'paper',
+      x0: todayStr, x1: todayStr, y0: 0, y1: 1,
+      line: { width: 2, dash: 'dot' }
+    }],
+    annotations: [{
+      x: todayStr, y: 1, yref: 'paper', xref: 'x',
+      xanchor: 'left', yanchor: 'bottom',
+      text: 'Today', showarrow: false, font: { size: 12 }
+    }]
+  };
+
+  Plotly.newPlot('ganttPlotly', [...bars, milestoneTrace], layout, {responsive: true});
+});
+</script>
+
+<p></br></br></br></p>
 
 
 
@@ -1461,9 +1599,53 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../glossary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Glossary">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Glossary
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../to-do/" class="md-footer__link md-footer__link--next" aria-label="Next: Tasks">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Tasks
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Ian Hambleton
+    </div>
   
   
     Made with
@@ -1485,10 +1667,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.path", "navigation.sections", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "content.action", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://unpkg.com/frappe-gantt/dist/frappe-gantt.umd.js"></script>
+      
+        <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
       
     
   </body>

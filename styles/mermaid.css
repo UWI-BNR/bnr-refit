@@ -1,0 +1,18 @@
+/* docs/styles/mermaid.css */
+.mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.mermaid {
+  font-size: 16px; /* bigger text */
+}
+
+.gantt-container {
+  overflow-x: auto;
+}
+
+.gantt-container .mermaid {
+  min-width: 1000px; /* force wide render */
+}
+
