@@ -6,18 +6,22 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="An Online Operations Manual for the 2025 BNR refit.">
+      
+      
+        <meta name="author" content="Ian Hambleton">
       
       
         <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/02_Data/sources/">
       
       
-        <link rel="prev" href="../../01_Workflow/storage/">
+        <link rel="prev" href="../../01_Workflow/updates/reporting-new/">
       
       
-        <link rel="next" href="../cleaning/">
+        <link rel="next" href="../structure/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/icons/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
@@ -43,10 +47,16 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CMonospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Monospace"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../styles/landing.css">
+    
+      <link rel="stylesheet" href="../../styles/mermaid.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/frappe-gantt/dist/frappe-gantt.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -60,10 +70,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -72,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-sources" class="md-skip">
+        <a href="#bnr-data-sources-and-provenance" class="md-skip">
           Skip to content
         </a>
       
@@ -88,8 +100,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="BNR Analytics System Refit" class="md-header__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -114,7 +125,19 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -212,11 +235,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../00_Intro/bnr-refit-intro/" class="md-tabs__link">
+        <a href="../../00_Intro/" class="md-tabs__link">
           
   
   
-  Intro
+    
+  
+  Introduction
 
         </a>
       </li>
@@ -232,11 +257,13 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../01_Workflow/overview/" class="md-tabs__link">
+        <a href="../../01_Workflow/" class="md-tabs__link">
           
   
   
-  Workflow
+    
+  
+  BNR Process
 
         </a>
       </li>
@@ -258,6 +285,8 @@
           
   
   
+    
+  
   Data
 
         </a>
@@ -278,7 +307,9 @@
           
   
   
-  Analysis and Reporting
+    
+  
+  Analysis & Reporting
 
         </a>
       </li>
@@ -297,6 +328,8 @@
         <a href="../../04_Technical/stata/" class="md-tabs__link">
           
   
+  
+    
   
   Technical
 
@@ -318,7 +351,31 @@
           
   
   
+    
+  
   Training
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06_Downloads/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Downloads
 
         </a>
       </li>
@@ -350,8 +407,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="BNR Analytics System Refit" class="md-nav__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
 
     </a>
     BNR Analytics System Refit
@@ -401,11 +457,19 @@
   
     
     
-    
-    
-      
       
         
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -416,25 +480,34 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../00_Intro/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Intro
+    Introduction
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Intro
+            Introduction
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -443,12 +516,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../00_Intro/bnr-refit-intro/" class="md-nav__link">
+      <a href="../../00_Intro/bnrcvd-workplan/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    BNR refit project
+    Project Workplan
     
   </span>
   
@@ -482,52 +555,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../00_Intro/timeline/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Timeline
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../00_Intro/to-do/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tasks
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -543,11 +570,23 @@
   
     
     
-    
-    
-      
       
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -558,39 +597,48 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_Workflow/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
-    Workflow
+    BNR Process
     
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Workflow
+            BNR Process
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
               
+            
+              
                 
   
   
   
   
     <li class="md-nav__item">
-      <a href="../../01_Workflow/overview/" class="md-nav__link">
+      <a href="../../01_Workflow/bnr-infrastructure/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Overview
+    Data Handling Infrastructure
     
   </span>
   
@@ -608,12 +656,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_Workflow/pre-redcap/" class="md-nav__link">
+      <a href="../../01_Workflow/bnr-process/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    pre-REDCap
+    Data Handling Process
     
   </span>
   
@@ -631,12 +679,99 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_Workflow/redcap/" class="md-nav__link">
+      <a href="../../01_Workflow/bnr-process-audit/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    REDCap
+    Data Handling Process Audit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_Workflow/updates/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Refit Changes
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Refit Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/process-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process changes
     
   </span>
   
@@ -654,12 +789,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_Workflow/post-redcap/" class="md-nav__link">
+      <a href="../../01_Workflow/updates/dataset-new/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    post-REDCap
+    Data changes
     
   </span>
   
@@ -677,17 +812,48 @@
   
   
     <li class="md-nav__item">
-      <a href="../../01_Workflow/storage/" class="md-nav__link">
+      <a href="../../01_Workflow/updates/analytics-new/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Storage
+    Analytics changes
     
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/reporting-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reporting changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -710,14 +876,28 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
+    
       
         
         
       
-      
-        
       
     
     
@@ -764,6 +944,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Data Sources
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -776,29 +969,79 @@
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cleaning/" class="md-nav__link">
         
-  
-  
-  <span class="md-ellipsis">
-    Data Cleaning
-    
-  </span>
-  
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advice-for-future-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advice for future improvement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-summary-table-suggested-bnr-provenance-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Summary Table: Suggested BNR Provenance System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed explanations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-supplementary-redcap-provenance-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Supplementary REDCap Provenance Project
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -840,6 +1083,29 @@
   
   <span class="md-ellipsis">
     Dataset Signoff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Storage
     
   </span>
   
@@ -902,9 +1168,34 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../sharing/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../sharing/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -913,7 +1204,73 @@
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Data Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharing/dsa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing Agreement
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sharing/dtrust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -934,11 +1291,21 @@
   
     
     
-    
-    
-      
       
         
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -954,7 +1321,7 @@
   
   
   <span class="md-ellipsis">
-    Analysis and Reporting
+    Analysis & Reporting
     
   </span>
   
@@ -965,7 +1332,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Analysis and Reporting
+            Analysis & Reporting
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1099,11 +1466,19 @@
   
     
     
-    
-    
-      
       
         
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -1192,7 +1567,7 @@
   
   
   <span class="md-ellipsis">
-    No-Code Interface
+    Low-Code Interface
     
   </span>
   
@@ -1226,29 +1601,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../04_Technical/downloads/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Downloads
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1264,11 +1616,15 @@
   
     
     
-    
-    
-      
       
         
+      
+        
+      
+    
+    
+    
+      
       
     
     
@@ -1352,6 +1708,64 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06_Downloads/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Downloads
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Downloads
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1371,6 +1785,68 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#advice-for-future-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advice for future improvement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-data-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Data Sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-summary-table-suggested-bnr-provenance-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Summary Table: Suggested BNR Provenance System
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailed-explanations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Detailed explanations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-supplementary-redcap-provenance-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Supplementary REDCap Provenance Project
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1394,8 +1870,290 @@
   
 
 
-<h1 id="data-sources">Data Sources<a class="headerlink" href="#data-sources" title="Permanent link">&para;</a></h1>
-<p>This page will describe the range of data sources used by the Barbados National Registry (BNR) for case identification and abstraction. It will include both public and private health sector sources, such as hospital records, laboratory reports, death certificates, and outpatient clinics. The page will also explain active and passive surveillance methods, and discuss how data access and permissions are managed.</p>
+<h1 id="bnr-data-sources-and-provenance">BNR Data Sources and Provenance<a class="headerlink" href="#bnr-data-sources-and-provenance" title="Permanent link">&para;</a></h1>
+<h2 id="advice-for-future-improvement">Advice for future improvement<a class="headerlink" href="#advice-for-future-improvement" title="Permanent link">&para;</a></h2>
+<p>As the BNR evolves, maintaining clear documentation and traceable data processes will be key to sustainability. These recommendations focus on strengthening transparency, automation, and data provenance without adding unnecessary complexity to daily operations.</p>
+<hr />
+<h2 id="1-data-sources">1. Data Sources<a class="headerlink" href="#1-data-sources" title="Permanent link">&para;</a></h2>
+<p>The BNR draws on several national and clinical data streams that together provide a comprehensive picture of cardiovascular disease in Barbados. Each source contributes unique information, from hospital admissions to death records, forming the foundation of the registry’s evidence base.</p>
+<p><mark>Draft. Christina to review / improve Table</mark></p>
+<table>
+<thead>
+<tr>
+<th><strong>Source Name</strong></th>
+<th><strong>Primary Data Collected</strong></th>
+<th><strong>Format / Access</strong></th>
+<th><strong>BNR Use</strong></th>
+<th><strong>Responsible Unit</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Queen Elizabeth Hospital (QEH)</strong></td>
+<td>Admissions, discharges, diagnosis (ICD-10), treatment details, outcomes</td>
+<td>Paper forms, hospital logs, electronic (REDCap entry)</td>
+<td>Identify and abstract confirmed cases of acute MI and stroke</td>
+<td>BNR Abstractors (GA-CDRC)</td>
+</tr>
+<tr>
+<td><strong>National Death Registry / Civil Registry</strong></td>
+<td>Death certificates, cause of death as text, date and place of death</td>
+<td>Electronic records and certified paper copies</td>
+<td>Identify Underlying cause of death (ICD-10). Identify out-of-hospital deaths and confirm mortality outcomes</td>
+<td>Civil Registry &amp; BNR Verification Team</td>
+</tr>
+<tr>
+<td><strong>Private Sector Providers</strong></td>
+<td>Clinical notifications, case reports, discharge notes</td>
+<td>Manual notifications, letters, or digital submissions</td>
+<td>Improve completeness of registry case capture</td>
+<td>BNR Outreach / Private Physician Liaison</td>
+</tr>
+<tr>
+<td><strong>Coroner and Autopsy Reports</strong></td>
+<td>Post-mortem confirmation of cause of death</td>
+<td>Paper reports and summary logs</td>
+<td>Validate cases with uncertain or sudden death</td>
+<td>BNR Verification Officer / Pathology Dept.</td>
+</tr>
+<tr>
+<td><strong>BNR REDCap Registry Database</strong></td>
+<td>Harmonised case records across all sources</td>
+<td>Secure electronic database with record-level audit trail</td>
+<td>Serves as the “single source of truth” for all validated cases</td>
+<td>BNR Data Management Team</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-overview">2. Overview<a class="headerlink" href="#2-overview" title="Permanent link">&para;</a></h2>
+<p>The Barbados National Registry (BNR) brings together information from several national data sources to track cardiovascular disease in Barbados.   Each source contributes one part of the national picture: QEH provides the clinical detail, death registration validates outcomes, private providers improve completeness, and the coroner confirms uncertain cases.  </p>
+<p>To sustain data quality as the registry grows, it is essential to record the <strong>provenance</strong> — the “chain of custody” — for every data record.  </p>
+<p>Rather than complicating the main registry, we propose that this could be done through a <strong>supplementary REDCap project</strong> that stores structured metadata linked to key identifiers in the main BNR database.</p>
+<p>This would be a lightweight companion system creating transparency and long-term traceability without changing existing workflows.</p>
+<hr />
+<h2 id="3-summary-table-suggested-bnr-provenance-system">3. Summary Table: Suggested BNR Provenance System<a class="headerlink" href="#3-summary-table-suggested-bnr-provenance-system" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Goal / Function</strong></th>
+<th><strong>What to Capture</strong></th>
+<th><strong>Where / How Captured</strong></th>
+<th><strong>Frequency</strong></th>
+<th><strong>Sustainability Features</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.1</td>
+<td><strong>Identify data source</strong></td>
+<td>Source type (hospital, death registry, private, coroner); source reference ID</td>
+<td>As REDCap fields in the main project and copied to provenance log</td>
+<td>At data entry</td>
+<td>Simple categorical fields; minimal added workload</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td><strong>Track record creation and edits</strong></td>
+<td>Date/time, user ID, project, and record ID</td>
+<td>Automatically via REDCap audit log and periodic API extract</td>
+<td>Weekly or monthly</td>
+<td>Built-in REDCap logging; no extra coding</td>
+</tr>
+<tr>
+<td>3.3</td>
+<td><strong>Record verification / lock status</strong></td>
+<td>Verified by, verification date, lock date, lock status</td>
+<td>Manual or automated update to provenance log</td>
+<td>Monthly</td>
+<td>Mirrors existing dataset sign-off process</td>
+</tr>
+<tr>
+<td>3.4</td>
+<td><strong>Link provenance to record</strong></td>
+<td>Record ID (same as main registry), event, user, timestamp, notes</td>
+<td>One row per event in supplementary project</td>
+<td>Ongoing</td>
+<td>Enables full traceability while separate from main data</td>
+</tr>
+<tr>
+<td>3.5</td>
+<td><strong>Capture data transformations</strong></td>
+<td>Export date, export script/ADO version, dataset version</td>
+<td>Embedded in Stata DTA during monthly export</td>
+<td>Monthly</td>
+<td>Auto-generated; self-documenting datasets</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td><strong>Maintain source mapping</strong></td>
+<td>Source variable ↔ REDCap variable mapping; data import rules</td>
+<td>Stored as CSV/Markdown file in documentation repository</td>
+<td>Reviewed annually</td>
+<td>Provides continuity during staff turnover</td>
+</tr>
+<tr>
+<td>3.7</td>
+<td><strong>Visualise provenance</strong></td>
+<td>Dashboard or summary table of data activity</td>
+<td>Derived from provenance project and audit log</td>
+<td>As needed</td>
+<td>Python script or Looker Studio view</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="detailed-explanations">Detailed explanations<a class="headerlink" href="#detailed-explanations" title="Permanent link">&para;</a></h2>
+<h3 id="31-identify-data-source">3.1 Identify Data Source<a class="headerlink" href="#31-identify-data-source" title="Permanent link">&para;</a></h3>
+<p>For each case, key variables within the main BNR REDCap project should clearly indicate their data origin.<br />
+Key metadata fields could include:<br />
+- <code>source_type</code> (hospital / death_registry / private / coroner)<br />
+- <code>source_reference_id</code> (e.g., hospital MRN, death certificate number)<br />
+- <code>collector_id</code> (the data abstractor or notifier)<br />
+These fields simply label where information came from. This metadata can be read by the supplementary provenance project via REDCap’s API.</p>
+<hr />
+<h3 id="32-track-record-creation-and-edits">3.2 Track Record Creation and Edits<a class="headerlink" href="#32-track-record-creation-and-edits" title="Permanent link">&para;</a></h3>
+<p>REDCap automatically logs every change, user, and timestamp.<br />
+The provenance system could export and store this <strong>audit log</strong> at regular intervals using the API.<br />
+Each export forms a “snapshot” of user activity that can be merged with the provenance project for summary reports such as:
+- “Who created this record?”
+- “When was it last edited?”
+- “Which fields changed between versions?”</p>
+<hr />
+<h3 id="33-record-verification-and-lock-status">3.3 Record Verification and Lock Status<a class="headerlink" href="#33-record-verification-and-lock-status" title="Permanent link">&para;</a></h3>
+<p>Once a record is verified in REDCap and locked for export, the provenance project could receive a short metadata record:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>record_id</td>
+<td>HEART_2025_0123</td>
+</tr>
+<tr>
+<td>verified_by</td>
+<td>I.Hambleton</td>
+</tr>
+<tr>
+<td>verified_date</td>
+<td>2025-03-15</td>
+</tr>
+<tr>
+<td>lock_status</td>
+<td>locked</td>
+</tr>
+<tr>
+<td>notes</td>
+<td>“Checked against discharge summary and death record”</td>
+</tr>
+</tbody>
+</table>
+<p>This provides an independent trace of the registry’s quality assurance cycle without modifying the main project.</p>
+<hr />
+<h3 id="34-link-provenance-to-record">3.4 Link Provenance to Record<a class="headerlink" href="#34-link-provenance-to-record" title="Permanent link">&para;</a></h3>
+<p>The <strong>supplementary provenance project</strong> acts as a parallel audit register.<br />
+Each row in the provenance project corresponds to one event in the main registry and includes:
+- <code>record_id</code> — matching the primary REDCap record ID<br />
+- <code>source_type</code> and <code>source_reference</code><br />
+- <code>event_type</code> (e.g. created, edited, verified, locked, exported)<br />
+- <code>user_id</code> and <code>timestamp</code><br />
+- <code>validation_status</code> (e.g. pending / verified / locked)  </p>
+<p>The linkage between the two projects relies on the shared <strong>record_id</strong> variable.<br />
+This means you can generate provenance summaries or trace a record’s history without - theoretically - accessing personal health data.</p>
+<hr />
+<h3 id="35-capture-data-transformations">3.5 Capture Data Transformations<a class="headerlink" href="#35-capture-data-transformations" title="Permanent link">&para;</a></h3>
+<p>Every monthly dataset export (from TREDCap) should automatically capture:
+- <code>export_date</code><br />
+- <code>exported_by</code><br />
+- <code>ado_version</code> or script version<br />
+- <code>redcap_project_id</code><br />
+- <code>dataset_hash</code> (optional)  </p>
+<p>These details can be appended to a simple “export manifest” file that accompanies each dataset.<br />
+Over time, this creates a verifiable timeline of data releases — essential for reproducibility.</p>
+<hr />
+<h3 id="36-maintain-source-mapping">3.6 Maintain Source Mapping<a class="headerlink" href="#36-maintain-source-mapping" title="Permanent link">&para;</a></h3>
+<p>A lightweight <strong>Source Mapping Register</strong> can live outside REDCap in your documentation repository.<br />
+It’s a table that lists how each variable from QEH, Death Registry, or Private Providers maps to REDCap variables, for example:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Source Variable</th>
+<th>REDCap Variable</th>
+<th>Mapping Rule</th>
+<th>Verified By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QEH Discharge Summary</td>
+<td>“Main Diagnosis”</td>
+<td><code>icd10_code</code></td>
+<td>Direct ICD lookup</td>
+<td>Data Abstractor</td>
+</tr>
+<tr>
+<td>Death Registry</td>
+<td>“Date of Death”</td>
+<td><code>death_date</code></td>
+<td>1:1 field mapping</td>
+<td>Data Verifier</td>
+</tr>
+<tr>
+<td>Private Clinic</td>
+<td>“Event Date”</td>
+<td><code>onset_date</code></td>
+<td>Manual entry</td>
+<td>Liaison Officer</td>
+</tr>
+</tbody>
+</table>
+<p>This table ensures that the data lineage is transparent and survives staff turnover.</p>
+<hr />
+<h3 id="37-visualise-provenance">3.7 Visualise Provenance<a class="headerlink" href="#37-visualise-provenance" title="Permanent link">&para;</a></h3>
+<p>Once the supplementary project is populated, a dashboard might show:
+- Records created per week (by source)<br />
+- Verification rate per abstractor<br />
+- Time between creation and lock<br />
+- Frequency of edits or re-verifications  </p>
+<p>These can be produced using Stata, python, or perhaps Looker Studio - pulling from the provenance REDCap API, allowing live transparency of the registry workflow.</p>
+<hr />
+<h2 id="4-supplementary-redcap-provenance-project">4. Supplementary REDCap Provenance Project<a class="headerlink" href="#4-supplementary-redcap-provenance-project" title="Permanent link">&para;</a></h2>
+<p>Instead of embedding provenance fields into the main REDCap database, the BNR might maintain a <strong>standalone Provenance Project</strong> that records all key metadata about case creation, verification, and export.</p>
+<h3 id="design-concept">Design Concept<a class="headerlink" href="#design-concept" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>One record per provenance event</strong> (not per patient)  </li>
+<li><strong>Core variables:</strong>  </li>
+<li><code>record_id</code> (from main registry)  </li>
+<li><code>event_type</code> (<code>create</code>, <code>edit</code>, <code>verify</code>, <code>lock</code>, <code>export</code>)  </li>
+<li><code>source_type</code> (<code>hospital</code>, <code>death_registry</code>, <code>private</code>, <code>coroner</code>)  </li>
+<li><code>source_reference</code> (MRN, death cert ID, etc.)  </li>
+<li><code>user_id</code> (REDCap username or initials)  </li>
+<li><code>timestamp</code> (system date/time)  </li>
+<li><code>notes</code> (optional)  </li>
+</ul>
+<h3 id="linking-mechanism">Linking Mechanism<a class="headerlink" href="#linking-mechanism" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Both projects share the same <code>record_id</code>.  </li>
+<li>The provenance project receives data through:</li>
+<li><strong>Data Entry Triggers</strong> or <strong>REDCap API calls</strong> from the main project when a new record or lock event occurs.  </li>
+<li><strong>Automated monthly upload</strong> from the Stata export scripts (which already handle locking and cumulative dataset creation).  </li>
+</ul>
+<h3 id="advantages">Advantages<a class="headerlink" href="#advantages" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Keeps provenance separate from clinical data (no added complexity).  </li>
+<li>Reduces risk of accidental exposure of health information.  </li>
+<li>Can be mirrored or archived independently for audit and quality assurance.  </li>
+<li>Works with low-resource infrastructure — only uses REDCap’s standard API and logging tools.  </li>
+</ul>
+<hr />
+<p>By adopting this lightweight, linked provenance project, the BNR could ensure that every record’s journey — from hospital form to verified case — is fully traceable, technically sustainable, and compliant with good data governance practice, without disrupting existing workflows or adding unnecessary complexity.</p>
+<p><br></p>
 
 
 
@@ -1428,9 +2186,53 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../01_Workflow/updates/reporting-new/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Reporting changes">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Reporting changes
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../structure/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Structure">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Data Structure
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Ian Hambleton
+    </div>
   
   
     Made with
@@ -1452,10 +2254,16 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "toc.follow", "content.code.copy", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "content.action", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://unpkg.com/frappe-gantt/dist/frappe-gantt.umd.js"></script>
+      
+        <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+      
+        <script src="../../js/mermaid-fix.js"></script>
       
     
   </body>

@@ -1,0 +1,2719 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An Online Operations Manual for the 2025 BNR refit.">
+      
+      
+        <meta name="author" content="Ian Hambleton">
+      
+      
+        <link rel="canonical" href="https://ianhambleton.github.io/bnr-refit/00_Intro/bnrcvd-workplan/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../glossary/">
+      
+      
+      <link rel="icon" href="../../assets/icons/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Project Workplan - BNR Analytics System Refit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CMonospace:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Monospace"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/landing.css">
+    
+      <link rel="stylesheet" href="../../styles/mermaid.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/frappe-gantt/dist/frappe-gantt.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bnr-cvd-refit-project-plan" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="BNR Analytics System Refit" class="md-header__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
+      
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BNR Analytics System Refit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Workplan
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ianhambleton/bnr-refit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bnr-refit
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Welcome
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Introduction
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../01_Workflow/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  BNR Process
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../02_Data/sources/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Data
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../03_Reporting/analytics-overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Analysis & Reporting
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../04_Technical/stata/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Technical
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../05_Training/overview/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Training
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../06_Downloads/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Downloads
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BNR Analytics System Refit" class="md-nav__button md-logo" aria-label="BNR Analytics System Refit" data-md-component="logo">
+      
+  <img src="../../assets/images/bnr01-transparent.png" alt="logo">
+
+    </a>
+    BNR Analytics System Refit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ianhambleton/bnr-refit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bnr-refit
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Welcome
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Project Workplan
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Workplan
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-0-pre-project-dataset-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 0 – Pre-Project Dataset Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1-20-to-26-october-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 1 – 20 to 26 October 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-2-27-october-to-2-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 2 – 27 October to 2 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-3-3-to-9-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 3 – 3 to 9 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4-10-to-16-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4 – 10 to 16 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5-17-to-23-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 5 – 17 to 23 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-6-24-to-30-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 6 – 24 to 30 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#december-2025-governance-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      December 2025 – Governance &amp; Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#january-2026-hardening-handover" class="md-nav__link">
+    <span class="md-ellipsis">
+      January 2026 – Hardening &amp; Handover
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glossary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_Workflow/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    BNR Process
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            BNR Process
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/bnr-infrastructure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Handling Infrastructure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/bnr-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Handling Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/bnr-process-audit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Handling Process Audit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../01_Workflow/updates/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Refit Changes
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Refit Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/process-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Process changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/dataset-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/analytics-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analytics changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_Workflow/updates/reporting-new/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reporting changes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/signoff/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Signoff
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/dataset-release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Release
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/dataset-dissemination/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataset Dissemination
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../02_Data/sharing/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
+            <span class="md-nav__icon md-icon"></span>
+            Data Sharing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/sharing/dsa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_Data/sharing/dtrust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Sharing Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Analysis & Reporting
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Analysis & Reporting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/analytics-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/sap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analysis Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/monthly/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Monthly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/annual/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Annual
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_Reporting/other-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Other
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Technical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/stata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stata Algorithms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menu System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Low-Code Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_Technical/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Initial Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Training
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Training
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Training/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_Training/selfpaced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-paced Learning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../06_Downloads/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Downloads
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Downloads
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-0-pre-project-dataset-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 0 – Pre-Project Dataset Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-1-20-to-26-october-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 1 – 20 to 26 October 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-2-27-october-to-2-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 2 – 27 October to 2 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-3-3-to-9-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 3 – 3 to 9 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-4-10-to-16-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 4 – 10 to 16 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-5-17-to-23-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 5 – 17 to 23 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#week-6-24-to-30-november-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week 6 – 24 to 30 November 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#december-2025-governance-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      December 2025 – Governance &amp; Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#january-2026-hardening-handover" class="md-nav__link">
+    <span class="md-ellipsis">
+      January 2026 – Hardening &amp; Handover
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/ianhambleton/bnr-refit/edit/master/docs/00_Intro/bnrcvd-workplan.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<p><mark>IH Reviewed (16-Oct-2025)</mark></p>
+<h1 id="bnr-cvd-refit-project-plan">BNR CVD Refit Project Plan<a class="headerlink" href="#bnr-cvd-refit-project-plan" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>KEY MILESTONES</th>
+<th>DATE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td><strong>Official Start:</strong></td>
+<td>October 1st, 2024</td>
+</tr>
+<tr>
+<td>✅</td>
+<td><strong>Contract Produced / Signed:</strong></td>
+<td>April 7th, 2025</td>
+</tr>
+<tr>
+<td>✅</td>
+<td><strong>Cumulative CVD dataset reviewed by:</strong></td>
+<td>June 30th, 2025</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td><strong>Cumulative CVD dataset created by:</strong></td>
+<td>Oct 30th, 2025</td>
+</tr>
+<tr>
+<td>❌</td>
+<td><strong>Hard Deadline:</strong> Annual report 2023</td>
+<td>Nov 30th, 2025</td>
+</tr>
+<tr>
+<td>❌</td>
+<td><strong>Project Completion:</strong></td>
+<td>Feb 28th, 2026</td>
+</tr>
+</tbody>
+</table>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>This page is our <strong>living project tracker</strong> for the BNR–CVD Refit. It provides a week-by-week breakdown of planned activities, a brief descriptions for each task, expected deliverables, and a simple note of whether the task is Not Started (❌), Underway (🟨), or Completed (✅).  </p>
+<p>The aim of this refit is to create a <strong>sustainable, reproducible and open analytical framework</strong> for the Barbados National Registry (CVD component).  </p>
+<p>By the end of February 2026, the project will:  </p>
+<ol>
+<li>Deliver a semi-automated <strong>Stata package (<code>bnrcvd.pkg</code>)</strong> to generate reports from exported registry data.  </li>
+<li>Produce a final <strong>2023 Annual Report (PDF)</strong> using the new automation pipeline.  </li>
+<li>Produce suggested <strong>Monthly</strong> and <strong>Administrative</strong> reports as needed.</li>
+<li>Establish clear <strong>Data Sharing and Trust Agreements (DSTA)</strong> for long-term data governance.  </li>
+<li>Publish a <strong>self-paced learning and documentation website</strong>, currently hosted at <a href="https://ianhambleton.github.io/bnr-refit">ianhambleton.github.io/bnr-refit</a>.  </li>
+</ol>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Refit project assumptions included the following caveat for successful operation:</p>
+<blockquote>
+<p>The BNR must produce and share clean cardiovascular datasets for all years of operation.</p>
+</blockquote>
+<p>The BNR project was unable to produce a cumulative dataset of CVD cases. The Refit project therefore extended it's remit to include a pre-processing phase (Phase 0 below). <strong>This phase aimed to produce a definitive cumulative record of CVD cases, from BNR initiation to end-2023.</strong></p>
+</div>
+<h2 id="phase-0-pre-project-dataset-preparation">Phase 0 – Pre-Project Dataset Preparation<a class="headerlink" href="#phase-0-pre-project-dataset-preparation" title="Permanent link">&para;</a></h2>
+<p><strong>Dates:</strong> June - October 2025 <br />
+<strong>Focus:</strong> Reconstruction of BNR–CVD datasets (2009–2023)<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed  </p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅</td>
+<td>Append 2021 data to 2009–2020 datasets</td>
+<td>Combine historical stroke and heart datasets into unified 2009–2021 dataset using official dataset naming conventions.</td>
+<td>Extended longitudinal dataset (2009–2021) ready for review.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Evaluate historical cleaning do-files</td>
+<td>Review 2022 legacy Stata scripts to understand prior data correction logic and identify inconsistencies.</td>
+<td>Documented lessons from past cleaning workflows for reuse.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Assess 2022 dataset usability</td>
+<td>Test 2022 abstraction data for structure and completeness; determine whether safe to append.</td>
+<td>Determined dataset not suitable for inclusion; corrective actions noted.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Review 2022 ineligibles</td>
+<td>Generate ineligibility flag variable categorising cases (e.g. clinical rejection, miscoding, discharge diagnosis).</td>
+<td>2022 dataset annotated with ineligibility classifications.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Export 2023 dataset and initialise do-files</td>
+<td>Extract latest REDCap data and create initial cleaning scripts for 2023 dataset.</td>
+<td>Initial 2023 dataset and template do-files established.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Review 2023 ineligibles</td>
+<td>Apply same flagging logic used for 2022 to maintain consistent categorisation.</td>
+<td>2023 dataset annotated with ineligibility classifications.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Combine 2022 + 2023 datasets</td>
+<td>Merge 2022 and 2023 incidence data using restructured format compatible with prior years.</td>
+<td>Combined two-year CVD dataset (2022–2023) prepared.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Clean 2022 + 2023 death data</td>
+<td>Standardise variable names, date formats, and cause-of-death codes for death registry subset.</td>
+<td>Clean death registry data ready for matching.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Clean combined 2022 + 2023 datasets</td>
+<td>Conduct final cleaning and variable reconciliation for merged incidence datasets.</td>
+<td>Harmonised 2022–2023 CVD dataset (pending final checks).</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Restructure 2009–2021 dataset</td>
+<td>Align older variables with new 2023 schema to support longitudinal merging.</td>
+<td>Restructured legacy dataset matching new schema.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Combine heart and stroke datasets</td>
+<td>Merge restructured BNR-Heart and BNR-Stroke datasets into a unified CVD dataset.</td>
+<td>Single comprehensive CVD dataset (2009–2021).</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Merge 2022 + 2023 death data with legacy dataset</td>
+<td>Link cleaned 2022–2023 death records to unified 2009–2021 dataset to generate full mortality linkage.</td>
+<td>Complete CVD mortality-linked dataset (pending merge).</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Append cleaned 2022 + 2023 data</td>
+<td>Append final 2022–2023 incidence data to legacy dataset post-merge.</td>
+<td>Updated longitudinal CVD dataset (2009–2023).</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Create data-quality check table</td>
+<td>Produce summary table of all cleaning checks (missingness, validity) for internal quality report and rule validation.</td>
+<td>Data-quality summary table for IH and DQ rule development.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Generate flagged data issues report</td>
+<td>Produce descriptive report using flag variables to summarise all identified data anomalies.</td>
+<td>Internal issue log and DQ recommendations report.</td>
+</tr>
+<tr>
+<td>🟨</td>
+<td>Maintain queries log</td>
+<td>Continue recording data issues and potential new DQ rules in “Queries Log for Christina.”</td>
+<td>Updated ongoing data-quality tracking file.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Locate raw data sources</td>
+<td>Attempt to retrieve original raw case-finding and abstraction datasets (2009–2021) from shared drives and archives.</td>
+<td>Confirmed archival status: only partial backups available.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Develop audit report</td>
+<td>Produce summary report of findings, corrective solutions, and outcomes.</td>
+<td>Audit report posted to Refit website.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Create current <code>do</code> file repo</td>
+<td>Create annotated repo of active <code>do</code> files.</td>
+<td>Active <code>do</code> files posted to GitHub repo.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Create current <code>document</code> repo</td>
+<td>Create annotated repo of active <code>documents</code> describing the new process.</td>
+<td>Active <code>documents</code> posted to GitHub repo.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Outcomes:</strong>  </p>
+<ul>
+<li>All major reconstruction tasks required for automation readiness completed.  </li>
+<li>The unified BNR–CVD dataset (2009–2023) existing in restructured form and can serve as the foundation for the forthcoming automated analytics system.</li>
+</ul>
+<hr />
+<h2 id="week-1-20-to-26-october-2025">Week 1 – 20 to 26 October 2025<a class="headerlink" href="#week-1-20-to-26-october-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Project Reset &amp; Stata Package Skeleton<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Confirm dataset structure</td>
+<td>Finalise BNR–CVD variable names, formats, ICD mapping, date and missingness rules.</td>
+<td>Locked data dictionary for CVD dataset.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Document dataset structure</td>
+<td>Add data dictionary to website.</td>
+<td>Documented data dictionary for CVD dataset.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Create repository &amp; folders</td>
+<td>Build project directories (<code>/src</code>, <code>/pkg</code>, <code>/docs</code>, <code>/examples</code>, <code>/tests</code>, <code>/output</code>).</td>
+<td>Working Git repository for bnrcvd development.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Set up package skeleton</td>
+<td>Create <code>.pkg</code> and placeholder ado/help files (<code>bnrcvdannual</code>, <code>bnrcvdmonthly</code>, <code>bnrcvdadmin</code>).</td>
+<td>Installable Stata package structure.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Establish configuration file</td>
+<td>Create <code>bnrcvdconfig.do</code> defining data paths, output folders, and registry standards.</td>
+<td>Consistent configuration template.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Draft DSTA v1</td>
+<td>Outline objectives, scope, data classes, and sign-off roles for data governance.</td>
+<td>Draft 1 of Data Sharing &amp; Trust Agreement.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Document DSTA v1</td>
+<td>Add drafts to website for review.</td>
+<td>Draft 1 of Data Sharing &amp; Trust Agreement.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Test PDF generation</td>
+<td>Generate a test PDF using <code>putpdf</code> with text, table, and figure placeholders.</td>
+<td>Verified PDF export pipeline.</td>
+</tr>
+<tr>
+<td>✅</td>
+<td>Website scaffolding</td>
+<td>Add initial pages under structure: <em>Intro</em>, <em>BNR Process</em>, <em>Data</em>, <em>Analysis &amp; Reporting</em>, <em>Technical</em>, <em>Training</em>, <em>Downloads</em> .</td>
+<td>Initial GitHub Pages visible online.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="week-2-27-october-to-2-november-2025">Week 2 – 27 October to 2 November 2025<a class="headerlink" href="#week-2-27-october-to-2-november-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Core Analytics (CVD)<br />
+<strong>Key:</strong> ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Develop <code>bnrcvdutil</code> tools</td>
+<td>Add functions for age-standardisation, gamma CIs, safe filenames, denominator handling.</td>
+<td>Shared utility library operational.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Implement <code>bnrcvdmonthly</code> logic</td>
+<td>Generate key indicators: case counts, fatality, completeness, trend tables.</td>
+<td>Prototype monthly analytics output.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Implement <code>bnrcvdannual</code> logic</td>
+<td>Compute incidence, mortality, ASIR, ASMR, and performance measures.</td>
+<td>Core analytics ready for testing.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Link analytics to <code>putpdf</code></td>
+<td>Create formatted PDF tables and figures with captions, titles, and legends.</td>
+<td>Automated report population.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Draft DSTA v2</td>
+<td>Expand governance language, data roles, and access request workflow.</td>
+<td>Reviewed DSTA draft 2.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Website: Analytics Engine</td>
+<td>Add “BNR-CVD Analytics Engine” explanation with code snippets.</td>
+<td>Updated documentation page.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="week-3-3-to-9-november-2025">Week 3 – 3 to 9 November 2025<a class="headerlink" href="#week-3-3-to-9-november-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Annual Report Prototype<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Assemble report sections</td>
+<td>Use <code>bnrcvdannual, year(2025) draft</code> to produce all sections: cover, exec summary, heart, stroke, appendices.</td>
+<td>Prototype annual report layout.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Integrate tables/figures</td>
+<td>Embed standardised visuals from analytics modules into the PDF.</td>
+<td>Tables and figures automatically generated.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Apply branding</td>
+<td>Add BNR header/footer, colour scheme, and consistent figure styles.</td>
+<td>Professional design consistency.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add validation scripts</td>
+<td>Begin cross-checking denominators, totals, and missing values.</td>
+<td>Validation pipeline prototype.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Website: Report Generation</td>
+<td>Add “Generating the Annual Report (PDF)” tutorial.</td>
+<td>Public walkthrough of reporting pipeline.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="week-4-10-to-16-november-2025">Week 4 – 10 to 16 November 2025<a class="headerlink" href="#week-4-10-to-16-november-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Validation &amp; Refinement<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Cross-validate data</td>
+<td>Compare computed results to manual checks or prior-year data.</td>
+<td>Validated key indicators.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add performance metrics</td>
+<td>Integrate AMI and Stroke quality-of-care measures into PDF output.</td>
+<td>Updated report metrics section.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Export CSVs</td>
+<td>Automatically export key tables to CSV for transparency.</td>
+<td>CSV dataset bundle alongside PDF.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Implement <code>bnrcvdadmin</code> tools</td>
+<td>Build commands: <code>check</code>, <code>completeness</code>, <code>makesample</code>.</td>
+<td>Quality control and sample data utilities.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Produce v0.9 candidate</td>
+<td>Run pipeline end-to-end to generate draft 2025 report.</td>
+<td>Release candidate report (RC1).</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Website: Validation Page</td>
+<td>Publish “Validation and QA” documentation.</td>
+<td>Public documentation update.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="week-5-17-to-23-november-2025">Week 5 – 17 to 23 November 2025<a class="headerlink" href="#week-5-17-to-23-november-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Pre-Release Polish<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Editorial review</td>
+<td>Standardise captions, titles, terminology, and grammar.</td>
+<td>Text-consistent report.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add reproducibility metadata</td>
+<td>Include build timestamp, git hash, and dataset signature in the PDF.</td>
+<td>Transparent provenance section.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Finalise methods text</td>
+<td>Add methods, definitions, and interpretation guidance.</td>
+<td>Ready-to-publish content.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Prepare release artifacts</td>
+<td>Create zip bundle of report, CSVs, logs, and code.</td>
+<td>Ready for GitHub release.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Website: Release Notes</td>
+<td>Add “Reproducible Build &amp; Release Notes” page.</td>
+<td>Published release documentation.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="week-6-24-to-30-november-2025">Week 6 – 24 to 30 November 2025<a class="headerlink" href="#week-6-24-to-30-november-2025" title="Permanent link">&para;</a></h2>
+<p><strong>Focus:</strong> Final Annual Report Delivery<br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Run final pipeline</td>
+<td>Execute <code>bnrcvdannual, year(2025) final</code> with official dataset.</td>
+<td>Final 2025 Annual Report (PDF).</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Validate outputs</td>
+<td>Verify all figures and tables match specification.</td>
+<td>QC-checked publication.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Tag and release</td>
+<td>Tag <code>v0.9.0</code> on GitHub with all artifacts.</td>
+<td>Public release of code + report.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Update website</td>
+<td>Upload report and release notes with permanent links.</td>
+<td>Website reflects completed milestone.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="december-2025-governance-documentation">December 2025 – Governance &amp; Documentation<a class="headerlink" href="#december-2025-governance-documentation" title="Permanent link">&para;</a></h2>
+<p><strong>Break:</strong> 22 Dec – 4 Jan <br />
+<strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Finalise DSTA v3</td>
+<td>Complete MoH and GA-CDRC sign-off draft with retention, breach, and audit clauses.</td>
+<td>Signed draft agreement.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add governance page</td>
+<td>Summarise data governance model for public website.</td>
+<td>Transparency &amp; trust documentation.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add workflow diagram</td>
+<td>Show data access → review → approval → release.</td>
+<td>Clear visual workflow published.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Develop user guide</td>
+<td>Step-by-step instructions for install, config, report generation.</td>
+<td>User documentation in Markdown.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Develop developer guide</td>
+<td>Document internal architecture, utils, testing conventions.</td>
+<td>Technical documentation.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Expand <code>bnrcvdadmin</code> metrics</td>
+<td>Add completeness/timeliness dashboards and run logs.</td>
+<td>Enhanced admin toolkit.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Website: Training modules</td>
+<td>Add “Using the CLI”, “Building Reports”, and “Interpreting Results” lessons.</td>
+<td>Online training live.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="january-2026-hardening-handover">January 2026 – Hardening &amp; Handover<a class="headerlink" href="#january-2026-hardening-handover" title="Permanent link">&para;</a></h2>
+<h3 id="week-1-5-to-10-january-2026">Week 1 – 5 to 10 January 2026<a class="headerlink" href="#week-1-5-to-10-january-2026" title="Permanent link">&para;</a></h3>
+<p><strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Extend monthly reports</td>
+<td>Add rolling 12-month and prior-year comparisons.</td>
+<td>Improved trend analytics.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Improve diagnostics</td>
+<td>Enhance error messages, add run logs and runtime metrics.</td>
+<td>More robust CLI package.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="week-2-11-to-20-january-2026">Week 2 – 11 to 20 January 2026<a class="headerlink" href="#week-2-11-to-20-january-2026" title="Permanent link">&para;</a></h3>
+<p><strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Cross-link documentation</td>
+<td>Integrate CLI help with GitHub Pages documentation.</td>
+<td>Unified doc ecosystem.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Add glossary &amp; FAQ</td>
+<td>Clarify terminology and command usage.</td>
+<td>Improved usability.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Final run</td>
+<td>Test all functions on full historical dataset.</td>
+<td>Verified stable release.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Tag final release</td>
+<td>Tag <code>bnrcvd v1.0.0</code> and update changelog.</td>
+<td>Final, stable version published.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="week-3-21-to-30-january-2026">Week 3 – 21 to 30 January 2026<a class="headerlink" href="#week-3-21-to-30-january-2026" title="Permanent link">&para;</a></h3>
+<p><strong>Key:</strong>  ❌ Not started 🟨 Underway ✅ Completed</p>
+<table>
+<thead>
+<tr>
+<th>✅</th>
+<th>Task</th>
+<th>Full Description</th>
+<th>Result / Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>❌</td>
+<td>Publish final website</td>
+<td>Upload all docs, tutorials, and data governance info.</td>
+<td>Live, complete GitHub Pages site.</td>
+</tr>
+<tr>
+<td>❌</td>
+<td>Deliver handover pack</td>
+<td>Provide final report, SOPs, user guide, and release summary to BNR lead.</td>
+<td>Official project closure.</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction to the BNR Refit Project">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction to the BNR Refit Project
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Glossary
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Ian Hambleton
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.instant", "navigation.tabs", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "content.action", "content.action.edit", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://unpkg.com/frappe-gantt/dist/frappe-gantt.umd.js"></script>
+      
+        <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+      
+        <script src="../../js/mermaid-fix.js"></script>
+      
+    
+  </body>
+</html>

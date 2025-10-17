@@ -1,7 +1,7 @@
-title: Workflow
+title: BNR Process
 nav:
-  - Overview: overview.md
-  - pre-REDCap: pre-redcap.md
-  - REDCap: redcap.md
-  - post-REDCap: post-redcap.md
-  - Storage: storage.md
+  - Refit changes overview: index.md
+  - Data Handling Infrastructure: bnr-infrastructure.md
+  - Data Handling Process: bnr-process.md
+  - Data Handling Process Audit: bnr-process-audit.md
+  - Refit Changes: updates 

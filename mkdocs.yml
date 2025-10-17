@@ -1,4 +1,6 @@
 site_name: BNR Analytics System Refit
+site_description: An Online Operations Manual for the 2025 BNR refit.
+site_author: Ian Hambleton
 
 site_url: https://ianhambleton.github.io/bnr-refit/
 repo_url: https://github.com/ianhambleton/bnr-refit
@@ -6,56 +8,91 @@ repo_name: bnr-refit
 
 theme:
   name: material
-  extra_css:
-    - styles/extra.css 
+  logo: assets/images/bnr01-transparent.png
+  favicon: assets/icons/favicon.ico 
+  font:
+    text: Open Sans
+    code: Monospace
+  # extra_css:
+  #   - styles/extra.css 
   features:
+    - navigation.indexes 
+    - navigation.instant
     - navigation.tabs
-    - navigation.sections
+    - navigation.path
+    # - navigation.sections
     - navigation.top
+    - navigation.footer
+    # - navigation.expand
     - toc.follow
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.action
     - content.action.edit
     - content.tabs.link
+#    - blog
   palette:
-    scheme: default
-    primary: blue
-    accent: deep orange
+    # Default Color Scheme  - but overriden by styles/css 
+    - scheme: default
   toc:
     integrate: false
 
 plugins:
   - search
-  - awesome-pages
-  # - mkdocstrings
-  # - with-pdf
+  - awesome-pages  
+#  - section-index
 
 markdown_extensions:
   - admonition
   - footnotes
   - pymdownx.details
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.highlight
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.blocks.caption
   - attr_list
+  - md_in_html
   - toc:
       permalink: true
       toc_depth: 2
   - pymdownx.emoji:
-      emoji_generator: pymdownx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-# extra_javascript:
-#   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
+extra_javascript:
+  - https://unpkg.com/frappe-gantt/dist/frappe-gantt.umd.js
+  - https://cdn.plot.ly/plotly-2.32.0.min.js
+  #   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
 #   - js/mermaid-init.js
+  - js/mermaid-fix.js   # this is the fix
+
 
 # Add downloads directory to site
 docs_dir: docs
+
+extra_css:
+  - styles/landing.css
+  - styles/mermaid.css
+  - https://unpkg.com/frappe-gantt/dist/frappe-gantt.css
+
+copyright: Copyright &copy; 2025 Ian Hambleton
+
+
+

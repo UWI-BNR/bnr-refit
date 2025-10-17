@@ -1,8 +1,6 @@
-title: Intro
+title: Introduction
 nav:
-  - BNR refit project: bnr-refit-intro.md
+  - Introduction to the BNR Refit Project: index.md
+  - Project Workplan: bnrcvd-workplan.md
   - Glossary: glossary.md
-  - Timeline: timeline.md
-  - Tasks: to-do.md
-#  - Sitemap: sitemap-diagram-vertical.md
 

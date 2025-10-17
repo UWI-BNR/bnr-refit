@@ -1,9 +1,9 @@
 title: Data
 nav:
   - Data Sources: sources.md
-  - Data Cleaning: cleaning.md
   - Data Structure: structure.md
   - Dataset Signoff: signoff.md
+  - Dataset Storage: storage.md
   - Dataset Release: dataset-release.md
   - Dataset Dissemination: dataset-dissemination.md
-  - Data Sharing: sharing.md
+  - Data Sharing: sharing

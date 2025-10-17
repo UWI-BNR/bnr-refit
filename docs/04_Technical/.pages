@@ -2,6 +2,5 @@ title: Technical
 nav:
   - Stata Algorithms: stata.md
   - Menu System: menu.md
-  - No-Code Interface: interface.md
+  - Low-Code Interface: interface.md
   - Initial Setup: setup.md
-  - Downloads: downloads.md

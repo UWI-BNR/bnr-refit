@@ -57,6 +57,7 @@ The cleaning of data from abstracted CVD cases is a continuous BNR process. At s
 For each CVD case, the sign-off process should include the following steps:
 
 **Tasks:**
+
 - Final review of current QC status. 
 - Final review of audit trail for QC corrections.
 - Final review of **primary** data points
@@ -81,11 +82,11 @@ A cumulative release of the *CVD-AMI* dataset and the *CVD-Stroke* dataset will 
 
 **Dataset Naming Convention:**
 
-- `BNR-CVD_<TYPE>_<TIER>_<YYYYMM>.dta`
+- `BNR-<TYPE>-<TIER>-<YYYYMM>.dta`
 
-- (Example) `BNR_-_CVD_AMI_DEID_202509.dta`
+- (Example) `BNR-AMI-DEID-202509.dta`
 
-- (Example) `BNR_CVD_STROKE_ANON_202509.dta`
+- (Example) `BNR-STROKE-ANON-202509.dta`
 
 **Release Folder Structure:**
 
@@ -250,10 +251,11 @@ Maintain logs for:
 Each dataset release includes:
 - Metadata file (`.txt`)
 - Record of total cases and changes since last release
-- Stored in: BNR-CVD_METADATA_<YYYYMM>.txt
+- Stored in: BNR-CVD-METADATA-<YYYYMM>.txt
   
 ---
 
 ## 13. Review and Updates
 - SOP reviewed annually or after major system or policy changes
 - Changes approved by BNR governance team
+</br></br>

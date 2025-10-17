@@ -4,6 +4,7 @@ hide:
   - navigation
   - toc
 ---
+==IH Reviewed (16-Oct-2025)==
 
 # Welcome to the Barbados National Registry (BNR)
 
@@ -12,7 +13,7 @@ hide:
 This site hosts documentation related to the 2025 BNR “refit” project — an initiative to improve the efficiency, automation, and therefore hopefully the sustainability of the BNR data systems.
 
 ## The Barbados National Registry
-The **Barbados National Registry for Chronic Non-Communicable Disease (BNR)** is a national surveillance system operated by the George Alleyne Chronic Disease Research Centre (GA-CDRC) on behalf of the Barbados Ministry of Health and Wellness. Since its establishment in 2008–2010, the BNR has been a unique and pioneering initiative—one of the first multi-NCD registries in the Western Hemisphere. It consists of three core components:
+The **Barbados National Registry for Chronic Non-Communicable Disease (BNR)** is a national surveillance system operated by the George Alleyne Chronic Disease Research Centre (GA-CDRC) on behalf of the Barbados Ministry of Health and Wellness. Since its establishment in 2008–2010, the BNR has been a pioneering initiative—one of the first multi-NCD registries in the Western Hemisphere. It consists of three core components:
 
 - **BNR-Stroke** – launched in 2008  
 - **BNR-Heart** – launched in 2009  
@@ -22,9 +23,12 @@ The BNR collects national data on incident cases of stroke, heart attack (acute 
 
 ### BNR Impact and Recognition
 
-The BNR has:
-- Provided high-quality national incidence and mortality estimates
-- Supported academic outputs and continuing medical education
-- Served as a model surveillance system for other small island states
+The BNR:
 
-➡️ To learn more about the goals, structure, and deliverables of the BNR refit project, see the [Project Introduction](00_Intro/bnr-refit-intro.md).
+- Provides high-quality national incidence and mortality estimates
+- Supports academic outputs and continuing medical education
+- Serves as a model surveillance system for other small island states
+
+➡️ To learn more about the goals, structure, and deliverables of the BNR refit project, see the [Refit Introduction](00_Intro/index.md).
+
+</br>

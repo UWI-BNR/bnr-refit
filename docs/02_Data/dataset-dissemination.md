@@ -169,8 +169,8 @@ BNR dissemination practices align with the **Barbados Data Protection Act (2019)
 
 ## 9. Version Control and Audit
 
-- Each dissemination assigned a unique name: `BNR_<CVD>_<TIER>_<YYYYMM>.dta`
-- Audit logs stored in `BNR_ACCESS_LOG_<YYYYMM>.txt`
+- Each dissemination assigned a unique name: `BNR-<CVD>-<TIER>-<YYYYMM>.dta`
+- Audit logs stored in `BNR-ACCESS-LOG-<YYYYMM>.txt`
 - Monthly sign-off required from Technical Lead and Data Privacy Officer
 
 ---
@@ -187,3 +187,4 @@ For dataset access requests or questions, contact:
 
 - SOP reviewed every 12 months or sooner if legislation or BNR policy changes.
 - Revisions must be approved by the BNR Professional Advisory Board.
+</br></br>

@@ -1,0 +1,61 @@
+site_name: BNR Analytics System Refit
+
+site_url: https://ianhambleton.github.io/bnr-refit/
+repo_url: https://github.com/ianhambleton/bnr-refit
+repo_name: bnr-refit
+
+theme:
+  name: material
+  extra_css:
+    - styles/extra.css 
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - content.tabs.link
+  palette:
+    scheme: default
+    primary: blue
+    accent: deep orange
+  toc:
+    integrate: false
+
+plugins:
+  - search
+  - awesome-pages
+  # - mkdocstrings
+  # - with-pdf
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - pymdownx.highlight
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - toc:
+      permalink: true
+      toc_depth: 2
+  - pymdownx.emoji:
+      emoji_generator: pymdownx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+# extra_javascript:
+#   - https://unpkg.com/mermaid@10.4.0/dist/mermaid.min.js
+#   - js/mermaid-init.js
+
+# Add downloads directory to site
+docs_dir: docs
