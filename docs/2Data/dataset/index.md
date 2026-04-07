@@ -1,6 +1,6 @@
 # Barbados CVD Dataset
 
-The *Barbados CVD Dataset* brings together more than a decade of information on heart attacks and strokes in Barbados.  It is managed by the *Barbados National Registry for Chronic Non-Communicable Disease (BNR)* and provides the most complete picture to date of how cardiovascular disease affects the Barbados population. This dataset allows Barbados to track progress, identify trends, and make decisions based on evidence.
+The *Barbados Cardiovascular Disease (CVD) Dataset* brings together more than a decade of information on heart attacks and strokes in Barbados.  It is managed by the *Barbados National Registry for Chronic Non-Communicable Disease (BNR)* and provides the most complete picture to date of how cardiovascular disease affects the Barbados population. This dataset allows Barbados to track progress, identify trends, and make decisions based on evidence.
 
 ---
 
